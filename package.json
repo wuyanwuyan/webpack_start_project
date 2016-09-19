@@ -1,0 +1,20 @@
+{
+  "name": "projnewname",
+  "version": "1.0.0",
+  "description": "no way!",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --progress --colors"
+  },
+  "keywords": [
+    "node",
+    "test",
+    "webpack",
+    "test"
+  ],
+  "author": "xxs",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^1.13.2"
+  }
+}
