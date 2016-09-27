@@ -1,4 +1,4 @@
-webpackJsonp([0,1],[
+webpackJsonp([0],[
 /* 0 */
 /***/ function(module, exports, __webpack_require__) {
 
@@ -14,7 +14,7 @@ webpackJsonp([0,1],[
 	console.log($);
 
 
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./libs/jquery\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))))
+	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"jquery\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()))))
 
 /***/ },
 /* 1 */

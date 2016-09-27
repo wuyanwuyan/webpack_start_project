@@ -8,7 +8,8 @@
     "url": "git@github.com:wuyanwuyan/webpack_start_project.git"
   },
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors"
+    "dev": "webpack-dev-server --progress --colors",
+    "webpack_error_detail":"webpack --display-error-details"
   },
   "keywords": [
     "node",
