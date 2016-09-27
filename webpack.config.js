@@ -22,7 +22,10 @@ module.exports = {
     filename: '[name].js'
   },
   plugins: [
-    new CommonsChunkPlugin("common.js", ["./libs/bootstrap/js/npm.js"])
+    new webpack.ProvidePlugin({
+      $: './libs/jquery'
+    }),//这个可以使jquery变成全局变量，妮不用在自己文件require('jquery')了
+    new webpack.optimize.CommonsChunkPlugin('vendor', 'vendor.bundle.js')//这是妮第三方库打包生成的文件
   ],
   module: {
     loaders: [
@@ -31,6 +34,12 @@ module.exports = {
   },
   resolveLoader:  {
     root: path.join(__dirname, "node_modules") 
+  },
+  resolve: {
+    extensions: ['.js', '.css'],
+    alias: {
+      jquery: "jquery/src/jquery"
+    }
   }
 }
 
