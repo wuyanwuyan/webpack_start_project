@@ -16,7 +16,7 @@ module.exports = {
     context: SRC_PATH,
     entry: {
         mainPage: './main/index',
-        valis:['jquery','bootstrap','test1','test2']
+        valis:['jquery','bootstrap','WdatePicker']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -39,9 +39,9 @@ module.exports = {
     ],
     module: {
         loaders: [
-            // {test: /\.css$/, loader: 'style!css'},
-            {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
-            {test: /\.css$/,loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
+            // {test: /\.css$/, loader: 'style!css'},   // 将CSS一起打包进js文件
+            {test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
+            {test: /\.css$/,loader: ExtractTextPlugin.extract("style-loader", "css-loader")},  // 将CSS文件提取出来
             // { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },    //从 npm 模块中将 jquery 挂载到全局
             // {test: require.resolve('bootstrap'), loader: 'expose?bootstrap'}    //将bootstrap暴露到全局
         ]
@@ -54,8 +54,7 @@ module.exports = {
         alias: {  // 别名，提高搜索效率，打包效率
             'jquery': path.resolve(SRC_PATH, './libs/jquery'),
             'bootstrap':path.resolve(SRC_PATH, './libs/bootstrap/js/bootstrap'),
-            'test1':path.resolve(SRC_PATH, './libs/testJs'),
-            'test2':path.resolve(SRC_PATH, './libs/testJs2')
+            'WdatePicker':path.resolve(SRC_PATH, './libs/My97DatePicker/WdatePicker')
         }
     },
     // externals: {

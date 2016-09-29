@@ -4,7 +4,8 @@
 // entry.js
 require("../css/normalize.css") // 载入 style.css
 // require("../libs/bootstrap/css/bootstrap.css") // 载入 style.css
-require("../css/style.css") // 载入 style.css
+require("../libs/My97DatePicker/skin/WdatePicker.css") // 载入 style.css
+require("../css/index.css") // 载入 style.css
 
 document.write('It works111.' + $)
 document.write(require('./module.js')) // 添加模块
