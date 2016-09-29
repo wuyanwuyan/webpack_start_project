@@ -16,7 +16,7 @@ module.exports = {
     context: SRC_PATH,
     entry: {
         mainPage: './main/index',
-        valis:['jquery','bootstrap','test1','test2']
+        vendors: ['jquery','bootstrap']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -26,8 +26,9 @@ module.exports = {
     },
     plugins: [
         new webpack.ProvidePlugin({
-            // $: 'jquery',    // 会被打包进entry里面
-            // jQuery: 'jquery'
+            $: 'jquery',
+            jQuery: 'jquery',
+            bootstrap:'bootstrap'
         }),
         new ExtractTextPlugin("[name].css")
         // ,new webpack.optimize.UglifyJsPlugin() // 代码压缩plugin
@@ -40,22 +41,19 @@ module.exports = {
     module: {
         loaders: [
             // {test: /\.css$/, loader: 'style!css'},
-            {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
+            { test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
             {test: /\.css$/,loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
-            // { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },    //从 npm 模块中将 jquery 挂载到全局
-            // {test: require.resolve('bootstrap'), loader: 'expose?bootstrap'}    //将bootstrap暴露到全局
+            {test: path.join(config.path.src, 'jquery'),loader: 'expose?jQuery'}    //将jquery暴露到全局
         ]
     },
     resolveLoader: {
         // root: path.join(__dirname, "node_modules")
     },
     resolve: {
-        extensions: ['.js', ''],
+        extensions: ['', '.coffee', '.js'],
         alias: {  // 别名，提高搜索效率，打包效率
-            'jquery': path.resolve(SRC_PATH, './libs/jquery'),
-            'bootstrap':path.resolve(SRC_PATH, './libs/bootstrap/js/bootstrap'),
-            'test1':path.resolve(SRC_PATH, './libs/testJs'),
-            'test2':path.resolve(SRC_PATH, './libs/testJs2')
+            'jquery': path.resolve(SRC_PATH, './libs/jquery.js'),
+            'bootstrap':path.resolve(SRC_PATH, './libs/bootstrap/js/bootstrap')
         }
     },
     // externals: {

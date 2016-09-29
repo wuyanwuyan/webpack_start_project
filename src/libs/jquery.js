@@ -14,7 +14,7 @@
 ( function( global, factory ) {
 
 	"use strict";
-
+	
 	if ( typeof module === "object" && typeof module.exports === "object" ) {
 
 		// For CommonJS and CommonJS-like environments where a proper `window`
@@ -45,6 +45,7 @@
 // enough that all such attempts are guarded in a try block.
 "use strict";
 
+	noGlobal = false; // 修改强制global
 var arr = [];
 
 var document = window.document;
