@@ -13,7 +13,6 @@ var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 console.log('+++++++++++++++++++++', path)
 
 module.exports = {
-    context: SRC_PATH,
     entry: {
         mainPage: './main/index',
         vendors: ['jquery','bootstrap']
