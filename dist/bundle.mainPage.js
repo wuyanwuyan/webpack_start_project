@@ -68,6 +68,20 @@
 	    $(this).text(Math.random() * 1000);
 	})
 	
+	$(".Wdate").on('click',function () {
+	    WdatePicker({
+	        onpicked: function (dp) {
+	            console.log('onpicked');
+	        },
+	        isShowClear: false,
+	        lang:'zh-cn'
+	    });
+	
+	    console.log('click');
+	});
+	
+	console.log(WdatePicker);
+	
 
 
 /***/ },

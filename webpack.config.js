@@ -10,13 +10,12 @@ const MODULE_PATH = path.resolve(ROOT_PATH, 'node_modules')
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
-console.log('+++++++++++++++++++++', path)
 
 module.exports = {
     context: SRC_PATH,
     entry: {
         mainPage: './main/index',
-        valis:['jquery','bootstrap','WdatePicker']
+        valis:['jquery','bootstrap','ztree','WdatePicker']
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -28,6 +27,7 @@ module.exports = {
         new webpack.ProvidePlugin({
             // $: 'jquery',    // 会被打包进entry里面
             // jQuery: 'jquery'
+            // WdatePicker : 'WdatePicker'
         }),
         new ExtractTextPlugin("[name].css")
         // ,new webpack.optimize.UglifyJsPlugin() // 代码压缩plugin
@@ -38,6 +38,7 @@ module.exports = {
        //      chunks: ["home", "detail", "list"]}
     ],
     module: {
+        // noParse : ["WdatePicker"],
         loaders: [
             // {test: /\.css$/, loader: 'style!css'},   // 将CSS一起打包进js文件
             {test: /\.(png|jpg|gif)$/, loader: 'url-loader?limit=8192'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
@@ -54,6 +55,7 @@ module.exports = {
         alias: {  // 别名，提高搜索效率，打包效率
             'jquery': path.resolve(SRC_PATH, './libs/jquery'),
             'bootstrap':path.resolve(SRC_PATH, './libs/bootstrap/js/bootstrap'),
+            'ztree':path.resolve(SRC_PATH, './libs/zTree/js/jquery.ztree.all'),
             'WdatePicker':path.resolve(SRC_PATH, './libs/My97DatePicker/WdatePicker')
         }
     },
