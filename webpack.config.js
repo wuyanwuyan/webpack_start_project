@@ -11,18 +11,18 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 var WebpackMd5Hash = require('webpack-md5-hash');
-console.log('{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}{}',SRC_PATH);
 
 module.exports = {
     context: SRC_PATH,
     entry: {
-        "pageIndex/mainPage": './main/index',
-        "bundle.valis": ['jquery', 'bootstrap', 'ztree']
+        "bundle.valis": ['jquery', 'bootstrap', 'ztree'],
+        "pageIndex/mainPage": './main/index'
+
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: 'js/[name].[chunkhash].js',
-        publicPath: path.resolve(DIST_PATH,'/asset'),     //webpack-dev-server访问的路径 publicPath是为webpack-dev-server所使用
+        // publicPath: path.resolve(DIST_PATH,'/asset'),     //webpack-dev-server访问的路径 publicPath是为webpack-dev-server所使用
         // ,chunkFilename: "chunk.[name].js"
     },
     plugins: [
@@ -30,7 +30,7 @@ module.exports = {
             {
                 favicon: 'img/logo.ico', //favicon路径
                 template: 'index.html',    //html模板路径
-                inject: false,    //允许插件修改哪些内容，包括head与body
+                inject: true,    //允许插件修改哪些内容，包括head与body
                 // hash: true,    //为静态资源生成hash值
                 minify: {    //压缩HTML文件
                     removeComments: true,    //移除HTML中的注释
