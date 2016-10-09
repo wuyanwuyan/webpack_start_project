@@ -84,7 +84,6 @@ module.exports = {
     },
     resolve: {
         root: [SRC_PATH, MODULE_PATH],
-        modulesDirectories : [MODULE_PATH],
         extensions: ['.js', ''],
         alias: {  // 别名，提高搜索效率，打包效率
             'jquery': path.resolve(SRC_PATH, './js/libs/jquery'),

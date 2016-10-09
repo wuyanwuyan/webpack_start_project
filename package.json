@@ -11,7 +11,7 @@
     "debug": "webpack",
     "debug-detail": "webpack-dev-server --progress --colors --display-error-details",
     "clean-debug": "node scripts/clean.js",
-    "dev-serve-hot-content-base": "webpack-dev-server --hot --port=8081 --content-base ./debug",
+    "dev-serve-hot-content-base": "webpack-dev-server --hot --inline --port=8081 --content-base ./debug",
     "release": "webpack -p --config ./webpack.production.config.js",
     "release-test": "webpack-dev-server -p --config ./webpack.production.config.js --inline --content-base ./release"
   },
