@@ -18,6 +18,7 @@ var mainPageHtmlConfig = {
     favicon : './assets/logo.ico',
     template: 'index_origin.html',    //html模板路径
     filename: 'index.html',
+    showErrors : false,
     inject: true,    //允许插件修改哪些内容，包括head与body
     // hash: true,    //为静态资源生成hash值
     chunks: mainPageChunks,
@@ -83,6 +84,7 @@ module.exports = {
     },
     resolve: {
         root: [SRC_PATH, MODULE_PATH],
+        modulesDirectories : [MODULE_PATH],
         extensions: ['.js', ''],
         alias: {  // 别名，提高搜索效率，打包效率
             'jquery': path.resolve(SRC_PATH, './js/libs/jquery'),
@@ -96,19 +98,6 @@ module.exports = {
     // },
     devtool: 'source-map'
 }
-
-var a = 10;
-function test() {
-    var a;
-    a = 5;
-    alert(a);
-    alert(this.a);
-
-    alert(this.a);
-    alert(a);
-}
-
-
 
 
 

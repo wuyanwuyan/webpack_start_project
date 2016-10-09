@@ -1,34 +1,25 @@
 /**
  * Created by Administrator on 2016/9/18.
  */
-// entry.js
-require("css/normalize.css") // 载入 style.css
-require("../libs/bootstrap/css/bootstrap.css") // 载入 style.css
 
-require("js/libs/zTree/css/zTreeStyle/zTreeStyle.css") // 载入 style.css
-// require("js/libs/My97DatePicker/skin/WdatePicker.css") // 载入 style.css
+require("../libs/bootstrap/css/bootstrap.css")
+require("js/libs/zTree/css/zTreeStyle/zTreeStyle.css")
+// require("js/libs/My97DatePicker/skin/WdatePicker.css")
+require("css/common.css")
 require("css/index.css") // 载入 style.css
-document.write('It works111.' + $)
-document.write(require('./module.js')) // 添加模块
 
-console.log('new 333---333----333-----------------------------------------------');
-console.log(window.$);
-console.log($);
-console.log(jQuery);
-console.log(window.jQuery)
-console.log('end -3333-----333-----------------------------------3333333-------------');
 
 $("#btn_test_modal").click(function (e) {
     $('#myModal').modal('show');
     $(this).text(Math.random() * 1000);
 })
+var setting = {
 
-var setting = {	};
-
+}
 var zNodes =[
-    { name:"这是父节点 - 展33开end stat大法师魔法", open:true,
+    { name:"这是父节点21 - 展开1111", open:true,
         children: [
-            { name:"3333父节点11 - 折叠",
+            { name:"3333787父节点11 - 折叠",
                 children: [
                     { name:"叶子节点111"},
                     { name:"叶子节33点112"},
@@ -75,4 +66,11 @@ var zNodes =[
 $(document).ready(function(){
     $.fn.zTree.init($("#tree"), setting, zNodes);
 });
+
+window.onresize = function(){
+
+}
+
+window.onresize();
+
 

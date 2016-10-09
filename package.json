@@ -10,8 +10,8 @@
   "scripts": {
     "debug": "webpack",
     "debug-detail": "webpack-dev-server --progress --colors --display-error-details",
-    "clean-debug" : "node scripts/clean.js",
-    "dev-serve-hot-content-base": "npm run-script debug && webpack-dev-server --hot --inline --port=8081 --content-base ./debug",
+    "clean-debug": "node scripts/clean.js",
+    "dev-serve-hot-content-base": "webpack-dev-server --hot --port=8081 --content-base ./debug",
     "release": "webpack -p --config ./webpack.production.config.js",
     "release-test": "webpack-dev-server -p --config ./webpack.production.config.js --inline --content-base ./release"
   },
@@ -37,5 +37,7 @@
     "webpack-dev-server": "^1.16.2",
     "webpack-md5-hash": "0.0.5"
   },
-  "dependencies": {}
+  "dependencies": {
+    "strip-ansi": "^3.0.1"
+  }
 }

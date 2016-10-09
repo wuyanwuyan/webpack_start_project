@@ -44,6 +44,7 @@ var mainPageHtmlConfig = {
     filename: 'index.html',
     inject: true,    //允许插件修改哪些内容，包括head与body
     // hash: true,    //为静态资源生成hash值
+    showErrors : false,
     chunks: mainPageChunks,
     chunksSortMode: function (a, b) {  // 这边如果用none，排序有问题。自己定义排序
         return mainPageChunks.indexOf(a.names[0]) - mainPageChunks.indexOf(b.names[0]);

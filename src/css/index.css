@@ -1,8 +1,9 @@
 /* style.css */
-body { background: yellow; }
+body {
+
+}
 
 #tree{
-    max-height: 200px;
+    min-height: 530px;
     overflow-x: auto;
-    width: 300px;
 }
