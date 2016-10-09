@@ -8,17 +8,17 @@
     "url": "git@github.com:wuyanwuyan/webpack_start_project.git"
   },
   "scripts": {
-    "dev": "webpack-dev-server --progress --colors",
-    "webpack_error_detail": "webpack --display-error-details",
-    "release_production": "webpack --config webpack.production.config.js",
-    "dev-serve-hot": "webpack-dev-server --inline --hot",
-    "dev-serve-hot-content-base": "webpack-dev-server --hot --inline --content-base ./dist"
+    "debug": "webpack",
+    "debug-detail": "webpack-dev-server --progress --colors --display-error-details",
+    "clean-debug" : "node scripts/clean.js",
+    "dev-serve-hot-content-base": "npm run-script debug && webpack-dev-server --hot --inline --port=8081 --content-base ./debug",
+    "release": "webpack -p --config ./webpack.production.config.js",
+    "release-test": "webpack-dev-server -p --config ./webpack.production.config.js --inline --content-base ./release"
   },
   "keywords": [
     "node",
     "test",
-    "webpack",
-    "test"
+    "webpack"
   ],
   "author": "xxs",
   "license": "ISC",
@@ -36,5 +36,6 @@
     "webpack": "^1.13.2",
     "webpack-dev-server": "^1.16.2",
     "webpack-md5-hash": "0.0.5"
-  }
+  },
+  "dependencies": {}
 }

@@ -1,16 +1,30 @@
+var dev = 'debug'
+
 var webpack = require('webpack')
 var path = require('path')
 
 
 const ROOT_PATH = path.resolve(__dirname)
 const SRC_PATH = path.resolve(ROOT_PATH, 'src')
-const DIST_PATH = path.resolve(ROOT_PATH, 'dist')
+const DIST_PATH = path.resolve(ROOT_PATH, dev)
 const MODULE_PATH = path.resolve(ROOT_PATH, 'node_modules')
 
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
-var WebpackMd5Hash = require('webpack-md5-hash');
+
+var mainPageChunks = ["libs", "pageIndex/mainPage"];
+var mainPageHtmlConfig = {
+    favicon : './assets/logo.ico',
+    template: 'index_origin.html',    //html模板路径
+    filename: 'index.html',
+    inject: true,    //允许插件修改哪些内容，包括head与body
+    // hash: true,    //为静态资源生成hash值
+    chunks: mainPageChunks,
+    chunksSortMode: function (a, b) {
+        return mainPageChunks.indexOf(a.names[0]) - mainPageChunks.indexOf(b.names[0]);
+    }
+}
 
 module.exports = {
     context: SRC_PATH,
@@ -19,29 +33,19 @@ module.exports = {
         "pageIndex/mainPage": './js/main/index'
     },
     output: {
-        path: path.resolve(__dirname, 'dist'),
-        filename: 'js/[name].[hash].js',    //'js/[name].[chunkhash].js',
+        path: DIST_PATH,
+        filename: 'js/[name].js',    //'js/[name].[chunkhash].js',
         publicPath: "/",     //webpack-dev-server访问的路径 publicPath是为webpack-dev-server所使用
         // ,chunkFilename: "chunk.[name].js"
     },
     plugins: [
-        new HtmlWebpackPlugin(
-            {
-                template: 'index_origin.html',    //html模板路径
-                filename: 'index.html',
-                inject: true,    //允许插件修改哪些内容，包括head与body
-                // hash: true,    //为静态资源生成hash值
-                chunks:["libs","pageIndex/mainPage"],
-                chunksSortMode:'none'
-            }
-        ),
+        new HtmlWebpackPlugin(mainPageHtmlConfig),
         new webpack.ProvidePlugin({
             // $: 'jquery',    // 会被打包进entry里面
             // jQuery: 'jquery'
             // WdatePicker : 'WdatePicker'
         }),
-        new ExtractTextPlugin("css/[name].[chunkhash].css"),
-        new WebpackMd5Hash() // 解决修改css改变js的hash问题
+        new ExtractTextPlugin("css/[name].css")
         // new webpack.HotModuleReplacementPlugin()
         // ,new webpack.optimize.UglifyJsPlugin() // 代码压缩plugin
         // ,new HtmlWebpackPlugin()
@@ -55,15 +59,27 @@ module.exports = {
         // noParse : ["WdatePicker"],
         loaders: [
             // {test: /\.css$/, loader: 'style!css'},   // 将CSS一起打包进js文件
-            {test: /\.(png|jpg|gif|svg|ico)$/,
-                loader: 'url?limit=8192&name=img/[name].[hash].[ext]'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
+            {
+                test: /\.(png|jpg|gif|svg|ico)$/,
+                loader: 'url?limit=8192&name=assets/[name].[ext]'
+            },  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
             {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},  // 将CSS文件提取出来
             // { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },    //从 npm 模块中将 jquery 挂载到全局
             // {test: require.resolve('bootstrap'), loader: 'expose?bootstrap'}    //将bootstrap暴露到全局
+            {
+                test: /\.woff/,
+                loader: 'url?prefix=font/&limit=10000&mimetype=application/font-woff&name=assets/[name].[ext]'
+            }, {
+                test: /\.ttf/,
+                loader: 'file?prefix=font/&name=assets/[name].[ext]'
+            }, {
+                test: /\.eot/,
+                loader: 'file?prefix=font/&name=assets/[name].[ext]'
+            }
         ]
     },
     resolveLoader: {
-        // root: path.join(__dirname, "dist")
+        // root: path.join(__dirname, dev)
     },
     resolve: {
         root: [SRC_PATH, MODULE_PATH],
@@ -78,8 +94,20 @@ module.exports = {
     // externals: {
     //     'jquery': 'jquery' //  需要在HTML文件里用<script>标签引入
     // },
-    // devtool: 'source-map'
+    devtool: 'source-map'
 }
+
+var a = 10;
+function test() {
+    var a;
+    a = 5;
+    alert(a);
+    alert(this.a);
+
+    alert(this.a);
+    alert(a);
+}
+
 
 
 
