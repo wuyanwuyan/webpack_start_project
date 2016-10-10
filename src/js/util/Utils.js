@@ -5,7 +5,7 @@
 var common = {};
 
 common.trace = function () {
-    console.log('trace======2=================++++++++++++++++');
+    console.log('test Require common trace');
 }
 
 module.exports = common;

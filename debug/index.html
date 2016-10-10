@@ -106,12 +106,20 @@
                 <th width="60px">单位</th>
             </tr>
             </thead>
-            <tbody>
+            <tbody id="tbody">
+
             </tbody>
         </table>
         <script id="table_template" type="text/html">
             <tr data-unit="${unit}" data-materialid="${materialId}">
-                <td class="td-one-Line" style="text-align: center;">${index}</td>
+                <td>${index}</td>
+                <td>${name}</td>
+                <td>${type}</td>
+                <td>${size}</td>
+                <td>${model}</td>
+                <td>${dest}</td>
+                <td>${date}</td>
+                <td>${unit}</td>
             </tr>
         </script>
     </div>

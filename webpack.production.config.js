@@ -56,7 +56,7 @@ debugConfig.plugins = [
     new CopyWebpackPlugin([{ from: 'js/libs/polyfill', to: 'js/polyfill' }]),   // 拷贝文件（一些腻子脚本）到发布目录
     new webpack.optimize.UglifyJsPlugin(
         {
-            compress: {warnings: false},
+            compress: {warnings: false,drop_console: true},
             output: {comments: false},
             except: ['$'] //排除关键字
         }
