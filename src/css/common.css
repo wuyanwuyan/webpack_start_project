@@ -83,7 +83,6 @@ input[type="number"] {
 
 .modal-title {
     line-height: 36px;
-    color: white;
     font-size: 14px;
 }
 
@@ -126,14 +125,6 @@ input[type="number"] {
 
 label {
     font-weight: normal !important;
-}
-
-.require {
-    color: red;
-    float: right;
-    position: relative;
-    top: -25px;
-    right: -9px;
 }
 
 .form-control[disabled]{
@@ -447,18 +438,10 @@ button img{
     height: 32px;
 }
 
-#date_from,#date_to {
-    margin-left: 10px;
-    width: 186px;
-}
-
 .tr-background-color{
     background-color:#E7ECEE!important;
 }
 
-/****
-鼠标样式
-*****/
-#d244,#d245{
-    cursor: default;
+.img-span{
+    display: inline-block;
 }

@@ -6,8 +6,12 @@ require("../libs/bootstrap/css/bootstrap.css")
 require("js/libs/zTree/css/zTreeStyle/zTreeStyle.css")
 // require("js/libs/My97DatePicker/skin/WdatePicker.css")
 require("css/common.css")
+require("css/outerframe.css")
+
 require("css/index.css") // 载入 style.css
 
+// var logoImg = require("assets/logo1.png");
+// document.getElementById('logo_img').src = logoImg;
 
 $("#btn_test_modal").click(function (e) {
     $('#myModal').modal('show');
@@ -66,6 +70,16 @@ var zNodes =[
 $(document).ready(function(){
     $.fn.zTree.init($("#tree"), setting, zNodes);
 });
+
+window.onhashchange = changeMenu;
+
+function changeMenu(){
+    var url = window.location.href,
+        index = url.indexOf('#');
+    var hash = url.slice(index + 1);
+    $('#headmenu li').removeClass('active');
+    $('a[name="' + hash + '"]').parent().addClass('active');
+}
 
 window.onresize = function(){
 
