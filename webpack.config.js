@@ -12,13 +12,14 @@ const MODULE_PATH = path.resolve(ROOT_PATH, 'node_modules')
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
-
+var CopyWebpackPlugin = require('copy-webpack-plugin');
 var mainPageChunks = ["libs", "pageIndex/mainPage"];
+
 var mainPageHtmlConfig = {
-    favicon : './assets/logo.ico',
+    favicon: './assets/logo.ico',
     template: 'index_origin.html',    //html模板路径
     filename: 'index.html',
-    showErrors : false,
+    showErrors: false,
     inject: true,    //允许插件修改哪些内容，包括head与body
     // hash: true,    //为静态资源生成hash值
     chunks: mainPageChunks,
@@ -30,7 +31,7 @@ var mainPageHtmlConfig = {
 module.exports = {
     context: SRC_PATH,
     entry: {
-        "libs": ['jquery', 'bootstrap', 'ztree'],
+        "libs": ['jquery', 'bootstrap', 'jquery.tmpl', 'ztree'],
         "pageIndex/mainPage": './js/main/index'
     },
     output: {
@@ -46,7 +47,8 @@ module.exports = {
             // jQuery: 'jquery'
             // WdatePicker : 'WdatePicker'
         }),
-        new ExtractTextPlugin("css/[name].css")
+        new ExtractTextPlugin("css/[name].css"),
+        new CopyWebpackPlugin([{ from: 'js/libs/polyfill', to: 'js/polyfill' }])   // 拷贝文件（一些腻子脚本）到发布目录
         // new webpack.HotModuleReplacementPlugin()
         // ,new webpack.optimize.UglifyJsPlugin() // 代码压缩plugin
         // ,new HtmlWebpackPlugin()
@@ -71,12 +73,10 @@ module.exports = {
                 test: /\.woff/,
                 loader: 'url?prefix=font/&limit=10000&mimetype=application/font-woff&name=assets/[name].[ext]'
             }, {
-                test: /\.ttf/,
+                test: /\.(ttf|eot)$/,
                 loader: 'file?prefix=font/&name=assets/[name].[ext]'
-            }, {
-                test: /\.eot/,
-                loader: 'file?prefix=font/&name=assets/[name].[ext]'
-            }
+            },
+            {test: /\.html$/, loader: "html?-minimize"} //避免压缩html,https://github.com/webpack/html-loader/issues/50
         ]
     },
     resolveLoader: {
@@ -89,6 +89,7 @@ module.exports = {
             'jquery': path.resolve(SRC_PATH, './js/libs/jquery'),
             'bootstrap': path.resolve(SRC_PATH, './js/libs/bootstrap/js/bootstrap'),
             'ztree': path.resolve(SRC_PATH, './js/libs/zTree/js/jquery.ztree.all'),
+            'jquery.tmpl': path.resolve(SRC_PATH, './js/libs/jquery.tmpl'),
             'WdatePicker': path.resolve(SRC_PATH, './js/libs/My97DatePicker/WdatePicker')
         }
     },

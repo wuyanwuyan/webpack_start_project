@@ -1,7 +1,7 @@
 
 var fs = require('fs');
 var path = require('path')
-// clean debug folder
+// clean one folder
 
 var deleteFolderRecursive = function(path) {
     var files = [];
@@ -18,7 +18,8 @@ var deleteFolderRecursive = function(path) {
         fs.rmdirSync(path);
     }
 };
-var folderName = '../debug'
+var args = process.argv.slice(2)[0];
+var folderName = '../' + args;
 var folder = path.resolve(__dirname,folderName);
 
 deleteFolderRecursive(folder);

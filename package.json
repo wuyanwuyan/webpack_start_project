@@ -10,7 +10,8 @@
   "scripts": {
     "debug": "webpack",
     "debug-detail": "webpack-dev-server --progress --colors --display-error-details",
-    "clean-debug": "node scripts/clean.js",
+    "clean-debug": "node scripts/clean.js debug ",
+    "clean-release": "node scripts/clean.js release",
     "dev-serve-hot-content-base": "webpack-dev-server --hot --inline --port=8081 --content-base ./debug",
     "release": "webpack -p --config ./webpack.production.config.js",
     "release-test": "webpack-dev-server -p --config ./webpack.production.config.js --inline --content-base ./release"
@@ -29,6 +30,7 @@
     "expose-loader": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
+    "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.22.0",
     "image-webpack-loader": "^2.0.0",
     "style-loader": "^0.13.1",
