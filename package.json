@@ -8,13 +8,11 @@
     "url": "git@github.com:wuyanwuyan/webpack_start_project.git"
   },
   "scripts": {
-    "debug": "webpack",
-    "debug-detail": "webpack-dev-server --progress --colors --display-error-details",
-    "clean-debug": "node scripts/clean.js debug ",
-    "clean-release": "node scripts/clean.js release",
-    "dev-serve-hot-content-base": "webpack-dev-server --hot --inline --port=8081 --content-base ./debug",
-    "release": "webpack -p --config ./webpack.production.config.js",
-    "release-test": "webpack-dev-server -p --config ./webpack.production.config.js --inline --content-base ./release"
+    "start": "webpack-dev-server --hot --inline --port=8081 --content-base ./debug",
+    "dev:build": "webpack --progress --colors --display-error-details",
+    "clean-debug": "node scripts/clean.js",
+    "production": "webpack -p --config ./webpack.production.config.js",
+    "production-view": "webpack-dev-server -p --config ./webpack.production.config.js --inline --content-base ./release"
   },
   "keywords": [
     "node",
@@ -24,15 +22,16 @@
   "author": "xxs",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^6.6.1",
     "autoprefixer-loader": "^3.2.0",
     "copy-webpack-plugin": "^3.0.1",
     "css-loader": "^0.25.0",
     "expose-loader": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "html-loader": "^0.4.4",
     "html-webpack-plugin": "^2.22.0",
     "image-webpack-loader": "^2.0.0",
+    "postcss-loader": "^1.2.2",
     "style-loader": "^0.13.1",
     "url-loader": "^0.5.7",
     "webpack": "^1.13.2",

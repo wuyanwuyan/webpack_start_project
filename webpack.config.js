@@ -66,7 +66,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|svg|ico)$/,
                 loader: 'url?limit=8192&name=assets/[name].[ext]'
             },  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
-            {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},  // 将CSS文件提取出来
+            {test: /\.css$/, loader: ExtractTextPlugin.extract("style", ["css","postcss"])},  // 将CSS文件提取出来
             // { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },    //从 npm 模块中将 jquery 挂载到全局
             // {test: require.resolve('bootstrap'), loader: 'expose?bootstrap'}    //将bootstrap暴露到全局
             {
@@ -79,9 +79,6 @@ module.exports = {
             {test: /\.html$/, loader: "html?-minimize"} //避免压缩html,https://github.com/webpack/html-loader/issues/50
         ]
     },
-    resolveLoader: {
-        // root: path.join(__dirname, dev)
-    },
     resolve: {
         root: [SRC_PATH, MODULE_PATH],
         extensions: ['.js', ''],
@@ -93,6 +90,9 @@ module.exports = {
             'WdatePicker': path.resolve(SRC_PATH, './js/libs/My97DatePicker/WdatePicker')
         }
     },
+    postcss: [
+        require('autoprefixer')()
+    ],
     // externals: {
     //     'jquery': 'jquery' //  需要在HTML文件里用<script>标签引入
     // },
