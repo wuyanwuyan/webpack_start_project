@@ -2,9 +2,74 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="15f0ad7c-d5dd-4a70-94fd-26a6acddd623" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator/profiles_settings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/xmu_logo.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/css/reset.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/assets/glyphicons-halflings-regular.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/assets/glyphicons-halflings-regular.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/assets/glyphicons-halflings-regular.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/assets/glyphicons-halflings-regular.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/assets/logo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/assets/zTreeStandard.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/css/pageIndex/mainPage.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/css/pageIndex/mainPage.css.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/js/libs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/js/libs.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/js/pageIndex/mainPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/js/pageIndex/mainPage.js.map" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/js/polyfill/es5-shim.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/js/polyfill/html5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/js/polyfill/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/js/polyfill/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/debug/logo.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/assets/glyphicons-halflings-regular.68ed1dac06bf0409c18ae7bc62889170.woff" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/assets/glyphicons-halflings-regular.7ad17c6085dee9a33787bac28fb23d46.eot" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/assets/glyphicons-halflings-regular.e49d52e74b7689a0727def99da31f3eb.ttf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/assets/glyphicons-halflings-regular.ff423a4251cf2986555523dfe315c42b.svg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/assets/logo1.8747989186720399c199fed680022028.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/assets/zTreeStandard.524f504c45ed6ca333a485533a9beb9c.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/css/pageIndex/mainPage.7c920ac4f725593c1b34.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/css/pageIndex/mainPage.baaa3127914b2c122ad7.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/js/libs.8a059d0b8154a0b45a74.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/js/pageIndex/mainPage.7c920ac4f725593c1b34.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/js/pageIndex/mainPage.baaa3127914b2c122ad7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/js/polyfill/es5-shim.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/js/polyfill/html5.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/js/polyfill/modernizr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/js/polyfill/respond.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/release/logo.ico" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-arrow-active.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-baojiadan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-cailiao.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-cailiaozhongzhunjia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-chengyuan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-company-data.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-company-price.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-filter-rule.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-gongyinshan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-gongzuo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-heimingdan.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-jiageguolv.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-jusuanguize.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-xiangmuguanli.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ico-zuzhigaikuang.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/icon-company-manage.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/ico/ziyuguolu.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/logo1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/search-click.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/normalize.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/css/outerframe.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/js/main/module.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/logo.ico" afterPath="$PROJECT_DIR$/src/assets/logo.ico" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/common.css" afterPath="$PROJECT_DIR$/src/css/common.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index_origin.html" afterPath="$PROJECT_DIR$/src/index_origin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/main/index.js" afterPath="$PROJECT_DIR$/src/js/main/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/util/Utils.js" afterPath="$PROJECT_DIR$/src/js/util/Utils.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.production.config.js" afterPath="$PROJECT_DIR$/webpack.production.config.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/css/index.css" afterPath="$PROJECT_DIR$/src/css/style.css" />
     </list>
     <ignored path="webpackproj.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,21 +90,83 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
+            <state relative-caret-position="510">
+              <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/package.json">
+      <file leaf-file-name="index_origin.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/index_origin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+            <state relative-caret-position="127">
+              <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="yarn.lock" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/yarn.lock">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/main/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="442">
+              <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Utils.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/js/util/Utils.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reset.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/css/reset.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -48,8 +175,8 @@
       <file leaf-file-name="webpack.production.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webpack.production.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+            <state relative-caret-position="355">
+              <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -73,7 +200,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/node_modules/module2.js" />
         <option value="$PROJECT_DIR$/bundle.js" />
         <option value="$PROJECT_DIR$/entry.js" />
         <option value="$PROJECT_DIR$/module.js" />
@@ -117,13 +243,14 @@
         <option value="$PROJECT_DIR$/src/css/outerframe1.css" />
         <option value="$PROJECT_DIR$/src/css/outerframe.css" />
         <option value="$PROJECT_DIR$/debug/css/pageIndex/mainPage.css" />
-        <option value="$PROJECT_DIR$/src/css/common.css" />
+        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/js/util/Utils.js" />
-        <option value="$PROJECT_DIR$/src/index_origin.html" />
+        <option value="$PROJECT_DIR$/src/css/common.css" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
         <option value="$PROJECT_DIR$/src/js/main/index.js" />
         <option value="$PROJECT_DIR$/webpack.production.config.js" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/src/css/style.css" />
+        <option value="$PROJECT_DIR$/src/index_origin.html" />
       </list>
     </option>
   </component>
@@ -137,9 +264,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1378" />
+    <option name="height" value="745" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -166,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -272,7 +397,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="scripts" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -286,18 +415,23 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="node_modules" />
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-redux-antd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -307,10 +441,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\gitCode\webpack_start_project\src\assets" />
+      <recent name="D:\gitCode\webpack_start_project\src\css" />
       <recent name="D:\gitCodes\webpack_start_project\src\css" />
       <recent name="D:\gitCodes\webpack_start_project\src\assets" />
       <recent name="D:\gitCodes\webpack_start_project\src\js\libs\polyfill" />
-      <recent name="D:\gitCodes\webpack_start_project\src\img" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\gitCodes\webpack_start_project\src\js" />
@@ -425,11 +560,17 @@
       <workItem from="1476061449481" duration="13784000" />
       <workItem from="1476081908017" duration="2325000" />
       <workItem from="1484611342777" duration="653000" />
+      <workItem from="1484787075935" duration="1240000" />
+      <workItem from="1489114349482" duration="13388000" />
+      <workItem from="1489153315945" duration="4183000" />
+      <workItem from="1489212852942" duration="24921000" />
+      <workItem from="1489319622355" duration="11437000" />
+      <workItem from="1489373792606" duration="3151000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="176488000" />
+    <option name="totallyTimeSpent" value="234808000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -441,17 +582,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <frame x="-8" y="0" width="1378" height="745" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18976545" sideWeight="0.6354992" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215478" sideWeight="0.85360825" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3254818" sideWeight="0.46268657" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26152197" sideWeight="0.30916846" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.215478" sideWeight="0.14639175" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32976446" sideWeight="0.4936034" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18976545" sideWeight="0.3645008" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31709957" sideWeight="0.69083154" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06396589" sideWeight="0.4947644" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26406926" sideWeight="0.4067164" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20880914" sideWeight="0.69083154" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06373293" sideWeight="0.4947644" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26247987" sideWeight="0.4067164" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21641791" sideWeight="0.21585903" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3494105" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -459,7 +600,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16505896" sideWeight="0.4914712" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.16425121" sideWeight="0.4914712" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -488,15 +629,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.html" />
-    <entry file="file://$PROJECT_DIR$/dist/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.css" />
-    <entry file="file://$PROJECT_DIR$/node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <entry file="file://$PROJECT_DIR$/dist/index.html" />
-    <entry file="file://$PROJECT_DIR$/dist/css/pageIndex/mainPage.e17da6b25c35514818f3.css" />
-    <entry file="file://$PROJECT_DIR$/release/js/pageIndex/mainPage.252c2d39965159cb5ad9.js" />
-    <entry file="file://D:/projBranch2/LubanTongMDS/WebRoot/asset/js/utils/Utils.js" />
-    <entry file="file://$PROJECT_DIR$/debug/js/libs.js.map" />
     <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/README.md" />
     <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/default_index.ejs" />
     <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/lib/compiler.js" />
@@ -504,7 +636,6 @@
     <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/lib/errors.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/lib/loader.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/package.json" />
-    <entry file="file://$PROJECT_DIR$/src/js/libs/jquery.js" />
     <entry file="file://$PROJECT_DIR$/src/js/libs/jquery.tmpl.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/html-webpack-plugin/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/art-template/node/_node.js" />
@@ -512,12 +643,9 @@
     <entry file="file://$PROJECT_DIR$/config/make-webpack.config.js" />
     <entry file="file://$PROJECT_DIR$/release/js/libs.35cb6c9bfa94dd7fa0c2.js" />
     <entry file="file://$PROJECT_DIR$/release/css/pageIndex/mainPage.252c2d39965159cb5ad9.css" />
-    <entry file="file://$PROJECT_DIR$/scripts/clean.js" />
     <entry file="file://$PROJECT_DIR$/release/css/pageIndex/mainPage.7c920ac4f725593c1b34.css" />
     <entry file="file://$PROJECT_DIR$/debug/css/pageIndex/mainPage.css.map" />
     <entry file="file://$PROJECT_DIR$/debug/js/polyfill/es5-shim.min.js" />
-    <entry file="file://$PROJECT_DIR$/release/index.html" />
-    <entry file="file://$PROJECT_DIR$/.gitignore" />
     <entry file="file://$PROJECT_DIR$/src/js/libs/polyfill/html5.js" />
     <entry file="file://$PROJECT_DIR$/src/js/libs/polyfill/es5-shim.min.js" />
     <entry file="file://$PROJECT_DIR$/debug/index.html" />
@@ -526,37 +654,134 @@
     <entry file="file://$PROJECT_DIR$/debug/assets/luntan.png" />
     <entry file="file://$PROJECT_DIR$/debug/assets/mima.png" />
     <entry file="file://$PROJECT_DIR$/src/css/outerframe1.css" />
-    <entry file="file://$PROJECT_DIR$/debug/css/pageIndex/mainPage.css" />
-    <entry file="file://$PROJECT_DIR$/src/css/common.css" />
-    <entry file="file://$PROJECT_DIR$/src/css/index.css" />
-    <entry file="file://$PROJECT_DIR$/src/css/normalize.css" />
     <entry file="file://$PROJECT_DIR$/debug/assets/logo1.png" />
-    <entry file="file://$PROJECT_DIR$/src/css/outerframe.css" />
-    <entry file="file://$PROJECT_DIR$/src/js/main/module.js" />
-    <entry file="file://$PROJECT_DIR$/src/js/util/Utils.js" />
-    <entry file="file://$PROJECT_DIR$/src/index_origin.html" />
-    <entry file="file://$PROJECT_DIR$/src/js/main/index.js" />
-    <entry file="file://$PROJECT_DIR$/webpack.production.config.js">
+    <entry file="file://$PROJECT_DIR$/scripts/clean.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="83" column="16" selection-start-line="83" selection-start-column="16" selection-end-line="83" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/outerframe.css" />
+    <entry file="file://$PROJECT_DIR$/src/assets/logo.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/logo1.png" />
+    <entry file="file://$PROJECT_DIR$/src/assets/search-click.png" />
+    <entry file="file://$PROJECT_DIR$/src/js/main/module.js" />
+    <entry file="file://$PROJECT_DIR$/src/css/normalize.css" />
+    <entry file="file://$PROJECT_DIR$/release/js/libs.8a059d0b8154a0b45a74.js" />
+    <entry file="file://$PROJECT_DIR$/debug/js/libs.js" />
+    <entry file="file://$PROJECT_DIR$/src/js/libs/fullPage/jquery.fullPage.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/release/css/pageIndex/mainPage.baaa3127914b2c122ad7.css" />
+    <entry file="file://$PROJECT_DIR$/debug/css/pageIndex/mainPage.css" />
+    <entry file="file://$PROJECT_DIR$/release/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="156" selection-start-line="0" selection-start-column="156" selection-end-line="0" selection-end-column="156" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/yarn.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
-          <folding />
+        <state relative-caret-position="196">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="86" column="46" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="46" />
+        <state relative-caret-position="510">
+          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/util/Utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/libs/jquery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="5582" column="14" selection-start-line="5582" selection-start-column="14" selection-end-line="5582" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/main/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.production.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="33" column="16" selection-start-line="33" selection-start-column="16" selection-end-line="33" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index_origin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="125" column="14" selection-start-line="125" selection-start-column="14" selection-end-line="125" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
