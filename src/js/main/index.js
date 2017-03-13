@@ -1,5 +1,4 @@
 require("css/reset.css");
-require("js/libs/fullPage/jquery.fullPage.css");
 require("css/common.css");
 require("css/style.css");
 
@@ -33,7 +32,8 @@ $("#contact-way-icon").click(function (event) {
     $(".real-contact-content").addClass('is-visible');
 
 })
-$('body').on('click',function(){
+// ipad 点击事件无效？
+$(document).on('click touchstart',function(){
     $(".real-contact-content").removeClass('is-visible');
 })
 
