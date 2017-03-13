@@ -113,8 +113,8 @@ hr{
     margin: 15px 0;
     width: auto;
     height: 1px;
-    border-color: #727878;
-    opacity: 0.2;
+    /*border-color: #727878;*/
+    opacity: 0.6;
 }
 
 .base-info-desc{
@@ -159,6 +159,7 @@ hr{
 }
 
 #contact-way-icon{
+    display:none;
     position: fixed;
     bottom: 0;
     right: 0;
@@ -167,15 +168,17 @@ hr{
     padding: 10px 0 10px 10px ;
     color: white;
     font-size: 1.4rem;
-    display: table;
     max-width: 100%;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.8);
-    transition: all 0.4s ease;
 }
 
 #contact-way-icon:hover{
     cursor: pointer;
     background-color: #0a739a;
+}
+
+#contact-way-icon.is-visible{
+    display: table;
 }
 
 .contact-title{
@@ -288,8 +291,7 @@ hr{
 }
 
 #main-content {
-    transition-property: transform;
-    transition-duration: 0.5s;
+    transition: transform 0.5s;
 }
 
 #main-nav.is-visible {
