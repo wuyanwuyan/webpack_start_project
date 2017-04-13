@@ -31,7 +31,7 @@ var mainPageHtmlConfig = {
     }
 }
 
-var publicPath = "//wuyanwuyan.github.io/";
+var publicPath = "./"; //wuyanwuyan.github.io/";
 module.exports = {
     context: SRC_PATH,
     entry: {
