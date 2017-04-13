@@ -31,7 +31,7 @@ var mainPageHtmlConfig = {
 module.exports = {
     context: SRC_PATH,
     entry: {
-        "libs": ['jquery','fullPage'],
+        "libs": ['jquery'],
         "pageIndex/mainPage": './js/main/index'
     },
     output: {
