@@ -31,17 +31,17 @@ var mainPageHtmlConfig = {
     }
 }
 
-
+var publicPath = "//wuyanwuyan.github.io/";
 module.exports = {
     context: SRC_PATH,
     entry: {
-        "libs": ['jquery', 'bootstrap', 'ztree'],
+        "libs": ['jquery','fullPage'],
         "pageIndex/mainPage": './js/main/index'
     },
     output: {
         path: DIST_PATH,
         filename: 'js/[name].[chunkhash].js',    //'js/[name].[chunkhash].js',
-        publicPath: "/",     //webpack-dev-server访问的路径 publicPath是为webpack-dev-server所使用
+        publicPath: publicPath,     //webpack-dev-server访问的路径 publicPath是为webpack-dev-server所使用
         // ,chunkFilename: "chunk.[name].js"
     },
     plugins: [
@@ -71,19 +71,19 @@ module.exports = {
         loaders: [
             // {test: /\.css$/, loader: 'style!css'},   // 将CSS一起打包进js文件
             {test: /\.(png|jpg|gif|svg|ico)$/,
-                loader: 'url?limit=8192&name=assets/[name].[hash].[ext]'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
+                loader: 'url?limit=8192&name=assets/[name].[hash:8].[ext]'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
             {test: /\.css$/, loader: ExtractTextPlugin.extract("style", ["css","postcss"])},  // 将CSS文件提取出来
             // { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },    //从 npm 模块中将 jquery 挂载到全局
             // {test: require.resolve('bootstrap'), loader: 'expose?bootstrap'}    //将bootstrap暴露到全局
             {
                 test   : /\.woff/,
-                loader : 'url?prefix=font/&limit=10000&mimetype=application/font-woff&name=assets/[name].[hash].[ext]'
+                loader : 'url?prefix=font/&limit=10000&mimetype=application/font-woff&name=assets/[name].[hash:8].[ext]'
             }, {
                 test   : /\.ttf/,
-                loader : 'file?prefix=font/&name=assets/[name].[hash].[ext]'
+                loader : 'file?prefix=font/&name=assets/[name].[hash:8].[ext]'
             }, {
                 test   : /\.eot/,
-                loader : 'file?prefix=font/&name=assets/[name].[hash].[ext]'
+                loader : 'file?prefix=font/&name=assets/[name].[hash:8].[ext]'
             }
         ]
     },
@@ -92,6 +92,7 @@ module.exports = {
         extensions: ['.js', ''],
         alias: {  // 别名，提高搜索效率，打包效率
             'jquery': path.resolve(SRC_PATH, './js/libs/jquery'),
+            'fullPage': path.resolve(SRC_PATH, './js/libs/fullPage/jquery.fullPage.min'),
             'bootstrap': path.resolve(SRC_PATH, './js/libs/bootstrap/js/bootstrap'),
             'ztree': path.resolve(SRC_PATH, './js/libs/zTree/js/jquery.ztree.all'),
             'WdatePicker': path.resolve(SRC_PATH, './js/libs/My97DatePicker/WdatePicker')

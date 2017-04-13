@@ -31,7 +31,7 @@ var mainPageHtmlConfig = {
 module.exports = {
     context: SRC_PATH,
     entry: {
-        "libs": ['jquery', 'bootstrap', 'jquery.tmpl', 'ztree'],
+        "libs": ['jquery','fullPage'],
         "pageIndex/mainPage": './js/main/index'
     },
     output: {
@@ -66,7 +66,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|svg|ico)$/,
                 loader: 'url?limit=8192&name=assets/[name].[ext]'
             },  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
-            {test: /\.css$/, loader: ExtractTextPlugin.extract("style", ["css","postcss"])},  // 将CSS文件提取出来
+            {test: /\.css$/, loader: ExtractTextPlugin.extract("style", ["css?sourceMap","postcss"])},  // 将CSS文件提取出来
             // { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },    //从 npm 模块中将 jquery 挂载到全局
             // {test: require.resolve('bootstrap'), loader: 'expose?bootstrap'}    //将bootstrap暴露到全局
             {
@@ -84,6 +84,7 @@ module.exports = {
         extensions: ['.js', ''],
         alias: {  // 别名，提高搜索效率，打包效率
             'jquery': path.resolve(SRC_PATH, './js/libs/jquery'),
+            'fullPage': path.resolve(SRC_PATH, './js/libs/fullPage/jquery.fullPage.min'),
             'bootstrap': path.resolve(SRC_PATH, './js/libs/bootstrap/js/bootstrap'),
             'ztree': path.resolve(SRC_PATH, './js/libs/zTree/js/jquery.ztree.all'),
             'jquery.tmpl': path.resolve(SRC_PATH, './js/libs/jquery.tmpl'),

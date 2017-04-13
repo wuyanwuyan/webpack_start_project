@@ -2,160 +2,157 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>主页</title>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1"/>
-    <meta http-equiv="description" content="主页">
-
-    <!--<link rel="stylesheet" href="css/pageIndex/mainPage.css" />-->
-
-    <!--[if lte IE 9]>
-    <script src="/js/polyfill/es5-shim.min.js"></script>
-    <script src="/js/polyfill/modernizr.js"></script>
-    <script src="/js/polyfill/html5.js"></script>
-    <script src="/js/polyfill/respond.min.js"></script>
-    <![endif]-->
-
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online_Resume</title>
 </head>
 <body>
 
-<!-- header -->
-<div class="header">
-    <div class="user">
-	                <span class="table-cell">
-	                  <span class="img-span"> </span>
-	                </span>
-        <div class="table-cell company-infor">
-            <div style="font-size:20px;" id="compName"></div>
-            <h5 style="font-size:14px;margin-bottom: 2px;">数据管理系统</h5>
+<div id="main-content">
+    <header>
+        resume
+        <span class="icon-bar">
+            <span class="icon-bar-line"></span>
+        </span>
+    </header>
+    <section class="section change-Background-color" id="basic">
+        <div class="section-title-wrapper">
+            <h3 class="section-title">基本信息</h3>
+            <h4 class="section-title-english">Basic Information</h4>
         </div>
+
+        <hr/>
+        <section class="text-center">
+            <p class="base-info-desc">
+                <strong>名字:</strong>许向圣<br>
+                <strong>出生日期:</strong>1992.01<br>
+                <strong>籍贯:</strong>福建仙游<br>
+                <strong>求职意向:</strong>前端工程师<br>
+            </p>
+        </section>
+
+    </section>
+
+
+
+    <section class="section" id="education">
+        <div class="section-title-wrapper">
+            <h3 class="section-title">教育背景</h3>
+            <h4 class="section-title-english">Educations</h4>
+        </div>
+        <hr/>
+
+        <div class="text-center">
+            <span class="xmu-logo"></span>
+            <p class="experience-period">
+                2010.09 - 2014.06
+            </p>
+            <h4>厦门大学软件学院数字媒体工程</h4>
+            <h4>学历·本科学士</h4>
+        </div>
+
+    </section>
+
+
+    <section class="section change-Background-color" id="experience">
+        <div class="section-title-wrapper">
+            <h3 class="section-title">工作经历</h3>
+            <h4 class="section-title-english">Experiences</h4>
+        </div>
+        <hr/>
+
+        <div class="text-center">
+            <div class="list-desc-wrapper">
+                <div style="margin-bottom: 20px">
+                    <strong>上海鲁班软件股份公司</strong>
+                    <p class="experience-time">2016.05-2016.12</p>
+                    <p>开发建筑业建造材料，采购商询价，供应商报价系统。</p>
+                    <ul>
+                        <li class="txt-indent-20">1)	工作内容主要负责移植一个PC端MFC软件“鲁班通”的功能到web端，技术选型jQuery，Webpack，树形插件zTree，图表库eCharts等，负责模块包括项目管理，供应商管理，材料信息编辑，材料价格波动展示等。</li>
+                        <li class="txt-indent-20">2)    使用React，ES6，Webpack快速构建鲁班数据部门新版官网页面。</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <strong>广州御和科技有限公司</strong>
+                    <p class="experience-time">2014.07-2016.02</p>
+                    <p>开发游戏后台数据运营系统。</p>
+                    <ul>
+                        <li class="txt-indent-20">1)	开发游戏运营发送消息的页面，供运营人员发布公告，实时广播到游戏客户端，游戏出bug，发送补偿给玩家。</li>
+                        <li class="txt-indent-20">2)	开发玩家数据管理页面，玩家查询，GM操作，禁言封号，发送邮件。</li>
+                        <li class="txt-indent-20">3)	开发实时数据展示页面，使用Highcharts图表库，用于展示游戏开新服后用户实时注册数，实时在线率，统计用户次日留存率。</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="section" id="abilities">
+        <div class="section-title-wrapper">
+            <h3 class="section-title">专业技能</h3>
+            <h4 class="section-title-english">Abilities</h4>
+        </div>
+        <hr/>
+        <div class="text-center">
+            <div class="list-desc-wrapper">
+                <h2>基本技能</h2>
+                <ul class="ul-skill">
+                    <li>熟练掌握原生JavaScript，HTML和CSS</li>
+                    <li>熟悉ES6</span></li>
+                    <li>扎实的计算机基础</li>
+                </ul>
+                <h2>工具框架库</h2>
+                <ul class="ul-skill">
+                    <li>熟练使用jQuery</li>
+                    <li>熟悉React技术栈，Redux，React Router，SCSS</li>
+                    <li>深入理解前端工程化，熟练配置Webpack，熟悉前端性能优化</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="section change-Background-color" id="evaluation">
+        <div class="section-title-wrapper">
+            <h3 class="section-title">自我评价</h3>
+            <h4 class="section-title-english">Self-evaluation</h4>
+        </div>
+        <hr/>
+        <div class="text-center">
+            <p>重视基础，拥抱变化</p>
+            <p>快速学习能力，强烈自我驱动力</p>
+            <p>思维严谨，随和幽默，良好的团队合作精神</p>
+        </div>
+    </section>
+
+    <section class="section text-center" id="contact">
+        <p>感谢您花费宝贵的时间浏览至此！</p>
+        <p>右下角可获得联系方式。</p>
+        <p>期待与您共事！</p>
+    </section>
+
+    <div id="contact-way-icon">
+        <span class="contact-title">联<br>系<br>方<br>式</span>
+    <span class="real-contact-content">
+        <strong>Phone:&nbsp&nbsp</strong><span>156 1801 0696</span><br>
+        <strong>Mail:&nbsp&nbsp</strong><span>xxs1992@foxmail.com</span>
+    </span>
+
     </div>
 
-    <ul class="nav nav-pills pull-left" id="headmenu">
-        <li role="presentation" class="active"><a href="#enterprise" name="enterprise">
-            <i class="ico ico-company-manage"></i>
-            <span>企业管理</span>
-        </a>
-        </li>
-        <li role="presentation"><a href="#company" name="company">
-            <i class="ico ico-comany-data"></i>
-            <span>企业数据</span>
-        </a></li>
-        <li role="presentation"><a href="#filter" name="filter">
-            <i class="ico ico-filter-rule"></i>
-            <span>过滤规则</span>
-        </a></li>
-        <li role="presentation"><a href="#transfer" name="transfer">
-            <i class="ico ico-company-price"></i>
-            <span>企业标价</span>
-        </a></li>
+</div>
+
+<nav id="main-nav">
+    <ul>
+        <li data-id="basic"><a><span>基本信息</span></a></li>
+        <li data-id="education"><a><span>教育背景</span></a></li>
+        <li data-id="experience"><a><span>工作经历</span></a></li>
+        <li data-id="abilities"><a><span>专业技能</span></a></li>
+        <li data-id="evaluation"><a><span>自我评价</span></a></li>
     </ul>
-
-</div>
-</div>
-<!-- header end -->
-<!-- 子菜单 -->
-<!--<div id="pageside" class="siderbar">-->
-<!--<ul class="nav nav-pills nav-stacked">-->
-<!--</ul>-->
-<!--&lt;!&ndash; 收缩按钮 &ndash;&gt;-->
-<!--<span id="btn-slider-left" class="btn-slider-left"></span>-->
-<!--</div>-->
-
-
-<div class="col-md-2 col-sm-2  col-xs-2 left-tree-wrapper">
-    <div class="siderbar">
-        <h3>类型树</h3>
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="请输入查询内容" id="input_tree_search">
-             			 	 <span class="input-group-btn">
-                  				<button class="btn btn-default" type="button" style="width: 43px;height: 34px"
-                                        id="btn_tree_search"><div></div></button>
-                             </span>
-        </div>
-        <ul id="tree" class="ztree">
-        </ul>
-    </div>
-</div>
-<div class="col-md-10 col-sm-10  col-xs-10 right-content-wrapper">
-
-    <form class="form-inline round-back-color advance-search-area margin-top-20" action="javascript:;">
-        <div class="input-group">
-            <input type="text" class="form-control pull-left" style="width:244px;" id="namekey"
-                   placeholder="名称查询">
-            <button id="search" type="button" class="btn btn-primary pull-left btn-orange">搜索
-            </button>
-            <button type="button" class="btn btn-primary pull-right btn-blue"
-                    style="margin-left: 20px;" data-toggle="modal"
-                    data-target="#myModal">高级搜索
-            </button>
-        </div>
-    </form>
-
-    <div class="margin-top-20 margin-bottom-20 table_outer_div_wrapper">
-        <table class="table table-bordered table-layout-fix borderless">
-            <thead>
-            <tr>
-                <th width="60px">序号</th>
-                <th width="60px">名称</th>
-                <th width="100px">类型</th>
-                <th width="60px">规格</th>
-                <th width="60px">型号</th>
-                <th width="70px">到货地</th>
-                <th width="180px">日期</th>
-                <th width="60px">单位</th>
-            </tr>
-            </thead>
-            <tbody id="tbody">
-
-            </tbody>
-        </table>
-        <script id="table_template" type="text/html">
-            <tr data-unit="${unit}" data-materialid="${materialId}">
-                <td>${index}</td>
-                <td>${name}</td>
-                <td>${type}</td>
-                <td>${size}</td>
-                <td>${model}</td>
-                <td>${dest}</td>
-                <td>${date}</td>
-                <td>${unit}</td>
-            </tr>
-        </script>
-    </div>
-</div>
-
-<!-- 模态框（Modal） -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal"
-                        aria-hidden="true">×
-                </button>
-                <h4 class="modal-title" id="myModalLabel">
-                    模态框标题
-                </h4>
-            </div>
-            <div class="modal-body">
-                提示信息，警告信息
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default"
-                        data-dismiss="modal">关闭
-                </button>
-                <button type="button" class="btn btn-primary">
-                    提交更改
-                </button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-
-
-<!--<script src="js/bundle.valis.js"></script>-->
-<!--<script src="js/pageIndex/mainPage.js"></script>-->
-
+    <a class="cd-close-menu">Close<span></span></a>
+</nav>
 
 </body>
 </html>
