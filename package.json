@@ -11,7 +11,7 @@
     "start": "webpack-dev-server --hot --inline --port=8081 --content-base ./debug",
     "dev:build": "webpack --progress --colors --display-error-details",
     "clean-debug": "node scripts/clean.js",
-    "production": "webpack -p --config ./webpack.production.config.js",
+    "production": "rm -rf release/* && webpack -p --config ./webpack.production.config.js",
     "production-view": "webpack-dev-server -p --config ./webpack.production.config.js --inline --content-base ./release"
   },
   "keywords": [
