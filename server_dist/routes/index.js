@@ -20,11 +20,19 @@ var _redis = require('../serverConf/redis');
 
 var _redis2 = _interopRequireDefault(_redis);
 
+var _moment = require('moment');
+
+var _moment2 = _interopRequireDefault(_moment);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 let router = new _koaRouter2.default();
 
-const key = 'contact';
+let key = 'TEST_contact';
+
+if (false) {
+    key = 'TEST_contact';
+}
 
 router.get('/contact', (() => {
     var _ref = (0, _asyncToGenerator3.default)(function* (ctx, next) {
@@ -40,7 +48,8 @@ router.get('/contact', (() => {
 router.post('/contact', (() => {
     var _ref2 = (0, _asyncToGenerator3.default)(function* (ctx, next) {
         let content = ctx.request.body;
-        yield _redis2.default.rpushAsync('contact', (0, _stringify2.default)(content));
+        content.time = (0, _moment2.default)();
+        yield _redis2.default.rpushAsync(key, (0, _stringify2.default)(content));
         ctx.body = null;
     });
 

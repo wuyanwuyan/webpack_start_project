@@ -1,5 +1,6 @@
 import koaRouter from 'koa-router';
 import redis from '../serverConf/redis';
+import moment from 'moment';
 
 let router = new koaRouter();
 
@@ -16,7 +17,8 @@ router.get('/contact', async (ctx, next) => {
 
 router.post('/contact', async (ctx, next) => {
     let content = ctx.request.body;
-    await redis.rpushAsync('contact', JSON.stringify(content));
+    content.time = moment();
+    await redis.rpushAsync(key, JSON.stringify(content));
     ctx.body = null;
 });
 

@@ -44,9 +44,9 @@ app.use((() => {
     };
 })());
 
-if (false) {
-    app.use(require('koa-cors')());
-}
+// if (process.env.NODE_ENV !== 'production') {
+app.use(require('koa-cors')());
+// }
 
 app.use((0, _koaGzip2.default)());
 

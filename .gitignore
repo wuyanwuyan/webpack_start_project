@@ -1,2 +1,4 @@
 node_modules/
 release/
+debug/
+server_dist/
