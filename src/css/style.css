@@ -17,20 +17,23 @@ html {
     font-size: 62.5%; /* 无懈可击到web设计 做法 */
 }
 
-
 body {
     font-size: 1.6rem;
     background-color: #f10a5a;
 }
 
-.fixed-logo{
-    position: fixed;
+.fixed-logo {
+    display: inline-block;
+    position: absolute;
     top: 1rem;
-    left: 1rem;
+    left: 1.1rem;
     z-index: 2;
     width: 18vw;
 }
 
+.fixed-logo img {
+    max-width: 100%;
+}
 
 section {
     color: white;
@@ -59,13 +62,20 @@ header {
     max-width: 100%;
 }
 
-.banner_center {
+.banner_btn {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    max-width: 80vw;
+    transform: scale(1) translate(-50%, 0%);
+    transform-origin: 0 0;
+    max-width: 66vw;
     max-height: 80%;
+    transition: transform 0.2s;
+}
+
+.banner_btn:hover {
+    cursor: pointer;
+    transform: scale(1.02) translate(-50%, 0%);
 }
 
 .phone3 {
@@ -85,15 +95,14 @@ header {
     border: 3px solid yellow;
     border-radius: 3px;
     max-width: 80vw;
-    min-width: 60vw;
     background-color: white;
 }
 
-#gift{
+#gift {
     color: black;
 }
 
-#gift div li{
+#gift div li {
     line-height: 1.6;
 }
 
@@ -101,13 +110,17 @@ form label {
     white-space: nowrap;
 }
 
-form label span{
+form label span {
     color: red;
     margin-left: 0.5rem;
 }
 
-.erweima{
+.case-img {
     max-width: 100%;
+}
+
+.erweima {
+    max-width: 30vw;
 }
 
 /*footer*/
@@ -119,13 +132,18 @@ footer {
     font-weight: bold;
 }
 
+.global_bg{
+    background: url('../assets/flower_bg.png') center top;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 736px) {
     html {
         /*font-size: 54.6875%;*/
         font-size: 46.875%;
     }
 
-    header{
+    header {
         max-height: 300px;
     }
 }

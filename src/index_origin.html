@@ -13,97 +13,99 @@
     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-<img src="/logo.png" class="fixed-logo">
 <header>
-    <img src="/banner_bg.png" class="banner_bg">
-    <img src="/banner_center.png" class="banner_center">
+    <a class="fixed-logo" href="http://www.cqaso.com" target="_blank"><img src="/logo.png"></a>
+    <img src="/banner_bg.jpg" class="banner_bg">
+    <img src="/banner_btn.png" class="banner_btn">
 </header>
 
-<section class="flex flex-direction-column flex-align-center">
-    <h2>快速提升排名</h2>
-    <hr/>
-    <ul class="flex flex-direction-row margin-top-md" id="fast-desc">
-        <li>流量不精准？</li>
-        <li>见效时间慢？</li>
-        <li>推广成本高？</li>
-        <li>用户转化差？</li>
-        <li>APP下载少？</li>
-    </ul>
-    <img src="/phone3.png" class="phone3 margin-top-xd">
-</section>
+<div class="global_bg">
+    <section class="flex flex-direction-column flex-align-center">
+        <h2>快速提升排名</h2>
+        <hr/>
+        <ul class="flex flex-direction-row margin-top-md" id="fast-desc">
+            <li>流量不精准？</li>
+            <li>见效时间慢？</li>
+            <li>推广成本高？</li>
+            <li>用户转化差？</li>
+            <li>APP下载少？</li>
+        </ul>
+        <img src="/phone3.png" class="phone3 margin-top-xd">
+    </section>
 
-<section class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
-    <h2>部分案例展示</h2>
-    <hr/>
-    <div class="center-box padding-md margin-top-md">
-        <img src="/apps.png" class="erweima">
-    </div>
-</section>
-
-<section id="gift" class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
-    <h2>领取礼包</h2>
-    <hr/>
-    <div class="margin-top-md center-box padding-md">
-        <form class="form-horizontal" role="form">
-            <div class="form-group">
-                <label for="contact" class="col-sm-2 control-label">联系人<span>*</span></label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="contact" name="contact"
-                           placeholder="联系人" maxlength="20" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="appName" class="col-sm-2 control-label">APP名<span>*</span></label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="appName" name="appName"
-                           placeholder="APP名" maxlength="40" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="phone" class="col-sm-2 control-label">电话<span>*</span></label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="phone" name="phone"
-                           placeholder="电话" maxlength="16" pattern="(^(13\d|15[^4\D]|17[13678]|18\d)\d{8}|170[^346\D]\d{7})$" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <label for="qq" class="col-sm-2 control-label">QQ<span>*</span></label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="qq" name="qq"
-                           placeholder="QQ" maxlength="12" pattern="^[1-9][0-9]{4,10}$" required>
-                </div>
-            </div>
-            <div class="form-group">
-                <div class="col-sm-offset-5 col-sm-2">
-                    <button type="submit" class="btn btn-primary">提交</button>
-                </div>
-            </div>
-        </form>
-
-        <div class="margin-top-md">
-            <h3>备注</h3>
-            <ul>
-                <li>1、ASO基础优化礼包：ASO100字符优化服务1次。</li>
-                <li>2、新客户可在下列价值6666元人民币的礼包中任选一：</li>
-                <li>①下载量：真实用户下载量300。</li>
-                <li>②热搜词：热度5000以内的关键词，优化至关键词排名前三1次。</li>
-                <li>③ASM：苹果应用商店竞价广告免费代理投放30天。</li>
-            </ul>
+    <section class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
+        <h2>部分案例展示</h2>
+        <hr/>
+        <div class="center-box padding-md margin-top-md">
+            <img src="/apps.jpg" class="case-img">
         </div>
+    </section>
 
-    </div>
-</section>
+    <section id="gift" class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
+        <h2>领取礼包</h2>
+        <hr/>
+        <div class="margin-top-md center-box padding-md">
+            <form class="form-horizontal" role="form">
+                <div class="form-group">
+                    <label for="contact" class="col-sm-2 control-label">联系人<span>*</span></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="contact" name="contact"
+                               placeholder="联系人" maxlength="20" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="appName" class="col-sm-2 control-label">APP名<span>*</span></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="appName" name="appName"
+                               placeholder="APP名" maxlength="40" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="col-sm-2 control-label">电话<span>*</span></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="phone" name="phone"
+                               placeholder="电话" maxlength="16" pattern="(^(13\d|15[^4\D]|17[13678]|18\d)\d{8}|170[^346\D]\d{7})$" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="qq" class="col-sm-2 control-label">QQ<span>*</span></label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="qq" name="qq"
+                               placeholder="QQ" maxlength="12" pattern="^[1-9][0-9]{4,10}$" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-offset-5 col-sm-2">
+                        <button type="submit" class="btn btn-primary">提交</button>
+                    </div>
+                </div>
+            </form>
 
-<section class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
-    <h2>联系我们</h2>
-    <hr/>
-    <div class="padding-md margin-top-md">
-        <img src="/erweima.png" class="erweima">
-    </div>
-</section>
-<footer>
-    Copyright©2013-2017闯奇信息科技（上海）有限公司 沪ICP备15011042号-2
-</footer>
+            <div class="margin-top-md">
+                <h3>备注</h3>
+                <ul>
+                    <li>1、ASO基础优化礼包：ASO100字符优化服务1次。</li>
+                    <li>2、新客户可在下列价值6666元人民币的礼包中任选一：</li>
+                    <li>①下载量：真实用户下载量300。</li>
+                    <li>②热搜词：热度5000以内的关键词，优化至关键词排名前三1次。</li>
+                    <li>③ASM：苹果应用商店竞价广告免费代理投放30天。</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
+        <h2>联系我们</h2>
+        <hr/>
+        <div class="padding-md margin-top-md">
+            <img src="/erweima.jpg" class="erweima">
+        </div>
+    </section>
+    <footer>
+        Copyright©2013-2017闯奇信息科技（上海）有限公司 沪ICP备15011042号-2
+    </footer>
+</div>
 
 </body>
 </html>

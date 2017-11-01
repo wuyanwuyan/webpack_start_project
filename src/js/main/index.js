@@ -24,3 +24,9 @@ $('form').submit(function (e) {
         }
     });
 })
+
+$(".banner_btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#gift").offset().top - 20
+    }, 600);
+});
