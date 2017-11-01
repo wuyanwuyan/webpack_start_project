@@ -6,99 +6,104 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
-    <meta name="keywords" content="aso,cqaso.com">
-    <title></title>
+    <meta name="keywords" content="aso,cqaso.com,app推广">
+    <title>app推广</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
+<img src="/logo.png" class="fixed-logo">
 <header>
-    <section class="header-wrapper">
-        <section class="logo">
-            <section class="logo-icon"></section>
-            <section>
-                <p class="logo-title">白胡子网络</p>
-                <a class="logo-link">baihuzish.com</a>
-            </section>
-
-        </section>
-        <section class="banner-text">
-            <p class="banner-title">
-                极速审核评估
-            </p>
-            <p class="banner-desc">
-                极速审核评估<br/>额度最高可达10万，最快1小时放款<br/>依托权威平台，低风险，高质量
-            </p>
-        </section>
-
-    </section>
-
+    <img src="/banner_bg.png" class="banner_bg">
+    <img src="/banner_center.png" class="banner_center">
 </header>
 
-<section id="aboutUs">
-    <section class="title">
-        关于我们
-        <hr/>
-    </section>
-
-    <ul class="table">
-        <li class="table-cell">
-            <div class="about-cell-img img-borrow"></div>
-            <em class="block">随时可借</em>
-            <p class="about-desc">随时可以借款，帮助用户解决燃眉之急</p>
-        </li>
-        <li class="about-cell">
-            <div class="about-cell-img img-request"></div>
-            <em class="block">申请便利</em>
-            <p class="about-desc">简单认证，即可获得借款资格，金额及时到位</p>
-        </li>
-        <li class="table-cell">
-            <div class="about-cell-img img-quota"></div>
-            <em class="block">额度灵活</em>
-            <p class="about-desc">100-100000元任意额度，随意借</p>
-        </li>
-        <li class="table-cell">
-            <div class="about-cell-img img-people"></div>
-            <em class="block">多种人群</em>
-            <p class="about-desc">支持学生，支持工薪族，支持企业主</p>
-        </li>
-
+<section class="flex flex-direction-column flex-align-center">
+    <h2>快速提升排名</h2>
+    <hr/>
+    <ul class="flex flex-direction-row margin-top-md" id="fast-desc">
+        <li>流量不精准？</li>
+        <li>见效时间慢？</li>
+        <li>推广成本高？</li>
+        <li>用户转化差？</li>
+        <li>APP下载少？</li>
     </ul>
-
+    <img src="/phone3.png" class="phone3 margin-top-xd">
 </section>
 
-<section id="contactUs">
-    <section class="title">
-        联系我们
-        <hr/>
-    </section>
-    <ul class="table">
-        <li class="table-cell">
-            <div class="contact-cell-img img-phone"></div>
-            <em class="block">手机</em>
-            <p class="contact-desc">13378133838</p>
-        </li>
-        <li class="table-cell">
-            <div class="contact-cell-img img-mail"></div>
-            <em class="block">邮箱</em>
-            <p class="contact-desc">mabing@baihuzish.com</p>
-        </li>
-        <li class="table-cell">
-            <div class="contact-cell-img img-register-location"></div>
-            <em class="block">注册地址</em>
-            <p class="contact-desc">Room 303r,No.98 Guokang Road,<br/>Yangpu District Shanghai,Shanghai 200092 CN</p>
-        </li>
-
-    </ul>
+<section class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
+    <h2>部分案例展示</h2>
+    <hr/>
+    <div class="center-box padding-md margin-top-md">
+        <img src="/apps.png" class="erweima">
+    </div>
 </section>
 
+<section id="gift" class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
+    <h2>领取礼包</h2>
+    <hr/>
+    <div class="margin-top-md center-box padding-md">
+        <form class="form-horizontal" role="form">
+            <div class="form-group">
+                <label for="contact" class="col-sm-2 control-label">联系人<span>*</span></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="contact" name="contact"
+                           placeholder="联系人" maxlength="20" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="appName" class="col-sm-2 control-label">APP名<span>*</span></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="appName" name="appName"
+                           placeholder="APP名" maxlength="40" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="phone" class="col-sm-2 control-label">电话<span>*</span></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="phone" name="phone"
+                           placeholder="电话" maxlength="16" pattern="(^(13\d|15[^4\D]|17[13678]|18\d)\d{8}|170[^346\D]\d{7})$" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="qq" class="col-sm-2 control-label">QQ<span>*</span></label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="qq" name="qq"
+                           placeholder="QQ" maxlength="12" pattern="^[1-9][0-9]{4,10}$" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-5 col-sm-2">
+                    <button type="submit" class="btn btn-primary">提交</button>
+                </div>
+            </div>
+        </form>
+
+        <div class="margin-top-md">
+            <h3>备注</h3>
+            <ul>
+                <li>1、ASO基础优化礼包：ASO100字符优化服务1次。</li>
+                <li>2、新客户可在下列价值6666元人民币的礼包中任选一：</li>
+                <li>①下载量：真实用户下载量300。</li>
+                <li>②热搜词：热度5000以内的关键词，优化至关键词排名前三1次。</li>
+                <li>③ASM：苹果应用商店竞价广告免费代理投放30天。</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<section class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
+    <h2>联系我们</h2>
+    <hr/>
+    <div class="padding-md margin-top-md">
+        <img src="/erweima.png" class="erweima">
+    </div>
+</section>
 <footer>
-    <p>
-        白胡子信息科技（上海）有限公司
-    </p>
-    <p>
-        Copyright@2015-2025 <a href="http://wwww.baihuzish.com">http://wwww.baihuzish.com</a> All Rights Reserved
-    </p>
+    Copyright©2013-2017闯奇信息科技（上海）有限公司 沪ICP备15011042号-2
 </footer>
-
 
 </body>
 </html>

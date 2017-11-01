@@ -1,0 +1,29 @@
+{
+  "presets": [
+    [
+      "env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    [
+      "stage-0"
+    ]
+  ],
+  "plugins": [
+    "transform-runtime",
+    "transform-node-env-inline"
+  ],
+
+  "env": {
+    "production": {
+      "plugins": [
+        "transform-runtime",
+        "transform-node-env-inline",
+        "transform-remove-console"
+      ]
+    }
+  }
+}

@@ -1,5 +1,5 @@
 html * {
-    font-family: 'Microsoft YaHei',Arial,'Hiragino Sans GB',md-hsgb,'WenQuanYi Micro Hei',sans-serif;
+    font-family: 'Microsoft YaHei', Arial, 'Hiragino Sans GB', md-hsgb, 'WenQuanYi Micro Hei', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -11,201 +11,121 @@ html * {
 html, body {
     /* important for the full-width image to work */
     height: 100%;
-    min-width: 1024px;
 }
-html{
-    font-size: 62.5%;  /* 无懈可击到web设计 做法 */
+
+html {
+    font-size: 62.5%; /* 无懈可击到web设计 做法 */
 }
+
+
 body {
     font-size: 1.6rem;
+    background-color: #f10a5a;
 }
 
-a {
-    color: white;
-    text-decoration: none;
+.fixed-logo{
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+    z-index: 2;
+    width: 18vw;
 }
-/*-------------------*/
 
-header{
-    height: 460px;
-    background-color:#fc8039;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-image: url("../assets/bg.png") ;
-    background-size: contain;
+
+section {
     color: white;
 }
 
-.header-wrapper{
-    max-width: 960px;
-    margin: 0 auto;
-    padding-left: 100px;
-}
-
-.logo{
-    display: flex;
-    align-items: center;
-    line-height: 1.2;
-    padding-top: 10px;
-}
-
-.logo-icon{
-    width: 75px;
-    height: 68px;
-    transform: scale(0.5);
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url("../assets/logo.png");
-    background-size: cover;
-    /*margin-right: 10px;*/
-}
-
-.logo-title{
-    font-size: 2.3rem;
-}
-
-.logo-link{
-    font-size: 1.4rem;
-    padding-left: 3px;
-    letter-spacing: 1px;
-}
-
-.banner-text{
-    padding-left: 10px;
-    margin-top: 100px;
-}
-
-.banner-title{
-    font-size: 4rem;
-    margin-bottom: 14px;
-}
-
-.banner-desc{
-
-    font-size: 1.5rem;
-    line-height: 1.8;
-}
-
-
-#contactUs{
-
-}
-
-#aboutUs{
-    background-color: #fafafa;
-}
-
-#aboutUs,#contactUs{
-    padding-top: 70px;
-    padding-bottom: 65px;
-}
-
-.title{
-    text-align: center;
-    font-size: 2rem;
-    max-width: 100px;
-    margin: 0 auto 40px;
-}
-
-.title:hover hr{
-    transform: scaleX(1);
-}
-
-#aboutUs .table-cell{
-    width: 25%;
-}
-
-#contactUs .table-cell{
-    width: 33.3%;
-}
-
-hr{
-    height: 2px;
-    border: 0;
-    border-top: 2px solid orange;
-    margin: 1em 0;
-    padding: 0;
-    transition: transform 0.2s linear;
-    transform: scaleX(0.4);
-}
-
-.table{
-    display: table;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1024px;
-    text-align: center;
-}
-
-.table-cell{
-    display: table-cell;
-    text-align: center;
-}
-
-.about-desc {
-    text-align: left;
-    display: inline-block;
-    max-width: 130px;
-
-}
-
-.about-cell-img,.contact-cell-img{
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: inline-block;
-}
-
-.about-cell-img{
-    width: 80px;
-    height: 80px;
-}
-
-.contact-cell-img{
-    width: 80px;
-    height: 80px;
-}
-
-.img-borrow{
-    background-image: url("../assets/icon1.png");
-}
-.img-request{
-    background-image: url("../assets/icon2.png");
-}
-.img-quota{
-    background-image: url("../assets/icon3.png");
-}
-.img-people{
-    background-image: url("../assets/icon4.png");
-}
-.img-phone{
-    background-image: url("../assets/icon5.png");
-}
-
-.img-mail{
-
-    background-image: url("../assets/icon6.png");
-}
-
-.img-register-location{
-    background-image: url("../assets/icon7.png");
-}
-
-em.block{
-    padding: 20px 0;
+section h2 {
+    font-weight: bold;
     font-size: 1.8rem;
-    display: block;
+    color: white;
 }
 
-.contact-desc:last-child{
-    font-size: 1.4rem;
+section hr {
+    width: 5rem;
+    color: white;
+    border: 1px solid white;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+
+header {
+    position: relative;
+}
+
+.banner_bg {
+    display: block;
+    max-width: 100%;
+}
+
+.banner_center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 80vw;
+    max-height: 80%;
+}
+
+.phone3 {
+    max-width: 80vw;
+}
+
+#fast-desc {
+    background: rgba(12, 11, 12, 0.5);
+    padding: 0.5rem;
+}
+
+#fast-desc li:not(:last-child) {
+    padding-right: 1.2rem;
+}
+
+.center-box {
+    border: 3px solid yellow;
+    border-radius: 3px;
+    max-width: 80vw;
+    min-width: 60vw;
+    background-color: white;
+}
+#gift{
+    color: black;
+}
+
+#gift div li{
+    line-height: 1.6;
+}
+
+form label {
+    white-space: nowrap;
+}
+
+form label span{
+    color: red;
+    margin-left: 0.5rem;
+}
+
+.erweima{
+    max-width: 100%;
 }
 
 /*footer*/
-footer{
-    font-size: 1.8rem;
-    padding: 2.4rem 0;
-    line-height: 1.8;
+footer {
+    font-size: 1.4rem;
+    padding: 4rem 0 3rem;
     color: white;
-    background-color: #484848;
     text-align: center;
+    font-weight: bold;
 }
+
+@media only screen and (max-width: 736px) {
+    html {
+        /*font-size: 54.6875%;*/
+        font-size: 46.875%;
+    }
+
+    header{
+        max-height: 300px;
+    }
+}
+

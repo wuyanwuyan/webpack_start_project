@@ -16,7 +16,7 @@ var CopyWebpackPlugin = require('copy-webpack-plugin');
 var mainPageChunks = ["libs", "pageIndex/mainPage"];
 
 var mainPageHtmlConfig = {
-    favicon: './assets/logo.ico',
+    // favicon: './assets/logo.ico',
     template: 'index_origin.html',    //html模板路径
     filename: 'index.html',
     showErrors: false,

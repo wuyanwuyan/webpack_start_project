@@ -15,6 +15,45 @@ b, strong {
     font-weight: 700;
 }
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
 .txt-indent-20{
     text-indent: 20px;
 }
+
+.padding-md{
+    padding: 1rem;
+}
+
+.margin-top-md{
+    margin-top: 1rem;
+}
+
+.margin-top-xd{
+    margin-top: 2rem;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.flex-justify-center{
+    justify-content: center;
+}
+
+.flex-align-center{
+    align-items: center;
+}
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
