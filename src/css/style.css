@@ -24,15 +24,20 @@ body {
 
 .fixed-logo {
     display: inline-block;
-    position: absolute;
-    top: 1rem;
-    left: 1.1rem;
+    position: fixed;
+    top: 1.2rem;
+    left: 1.2rem;
     z-index: 2;
     width: 18vw;
 }
 
 .fixed-logo img {
     max-width: 100%;
+}
+
+.banner_text{
+    max-height: 3.6rem;
+    max-width: 96vw;
 }
 
 section {
@@ -102,12 +107,20 @@ header {
     color: black;
 }
 
-#gift div li {
-    line-height: 1.6;
+.gift-desc{
+    color: #454545;
+    line-height: 1.4;
+    font-size: 1.4rem;
+}
+
+.gift-box{
+    min-width: 40vw;
 }
 
 form label {
     white-space: nowrap;
+    text-align: left!important;
+    padding-bottom: 7px;
 }
 
 form label span {
@@ -126,7 +139,7 @@ form label span {
 /*footer*/
 footer {
     font-size: 1.4rem;
-    padding: 4rem 0 3rem;
+    padding: 4rem 1rem 3rem;
     color: white;
     text-align: center;
     font-weight: bold;
