@@ -4,10 +4,7 @@ import bluebird from 'bluebird';
 bluebird.promisifyAll(redis.RedisClient.prototype);
 bluebird.promisifyAll(redis.Multi.prototype);
 
-const client = redis.createClient({
-    host: '115.159.127.88',
-    password: 'chuangqi@123'
-});
+const client = redis.createClient(require('./password.json'));
 
 client.on("error", function (err) {
     console.log("redis Error " + err);

@@ -2,3 +2,5 @@ node_modules/
 release/
 debug/
 server_dist/
+
+server/serverConf/password.json

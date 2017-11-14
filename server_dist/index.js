@@ -48,6 +48,9 @@ app.use((() => {
 app.use(require('koa-cors')());
 // }
 
+
+app.use(require('koa-static')(__dirname + '/static'));
+
 app.use((0, _koaGzip2.default)());
 
 // app.use(bodyParser());

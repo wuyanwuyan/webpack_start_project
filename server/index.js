@@ -19,6 +19,9 @@ app.use(async function (ctx, next) {
     app.use(require('koa-cors')());
 // }
 
+
+app.use(require('koa-static')(__dirname + '/static'));
+
 app.use(gzip());
 
 // app.use(bodyParser());

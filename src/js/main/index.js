@@ -11,7 +11,7 @@ $('form').submit(function (e) {
     var that = this;
     $.ajax({
         type: 'POST',
-        url: 'http://121.41.91.93:8091/contact',
+        url: '/tempapi/contact',
         data: JSON.stringify(data),
         contentType:"application/json; charset=utf-8",
         datatype:'json',

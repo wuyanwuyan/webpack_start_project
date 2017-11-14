@@ -14,24 +14,24 @@
 </head>
 <body>
 <header>
-    <a class="fixed-logo" href="http://www.cqaso.com" target="_blank"><img src="/logo.png"></a>
-    <img src="/banner_bg.jpg" class="banner_bg">
-    <img src="/banner_btn.png" class="banner_btn">
+    <a class="fixed-logo" href="http://www.cqaso.com" target="_blank"><img src="<%= require('./assets/logo.png') %>"></a>
+    <img src="<%= require('./assets/banner_bg.jpg') %>" class="banner_bg">
+    <img src="<%= require('./assets/banner_btn.png') %>" class="banner_btn">
 </header>
 
 <div class="global_bg">
     <section class="flex flex-direction-column flex-align-center padding-top-md">
         <h2>快速提升排名</h2>
         <hr/>
-       <img src="/banner_text.png" class="banner_text margin-top-md">
-        <img src="/phone3.png" class="phone3 margin-top-xd">
+       <img src="<%= require('./assets/banner_text.png') %>" class="banner_text margin-top-md">
+        <img src="<%= require('./assets/phone3.png') %>" class="phone3 margin-top-xd">
     </section>
 
     <section class="flex flex-direction-column flex-align-center" style="margin-top: 4rem">
         <h2>部分案例展示</h2>
         <hr/>
         <div class="center-box padding-md margin-top-md">
-            <img src="/apps.jpg" class="case-img">
+            <img src="<%= require('./assets/apps.jpg') %>" class="case-img">
         </div>
     </section>
 
@@ -95,13 +95,21 @@
         <h2>联系我们</h2>
         <hr/>
         <div class="padding-md margin-top-md">
-            <img src="/erweima.jpg" class="erweima">
+            <img src="<%= require('./assets/erweima.jpg') %>" class="erweima">
         </div>
     </section>
     <footer>
         Copyright©2013-2017闯奇信息科技（上海）有限公司 沪ICP备15011042号-2
     </footer>
 </div>
-
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?7a39dec4c6a763daf1feda4947a82779";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 </body>
 </html>

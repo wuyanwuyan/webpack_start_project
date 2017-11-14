@@ -15,27 +15,27 @@ var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
 var mainPageChunks = ["mainPage"];
 var mainPageHtmlConfig = {
-    favicon : './assets/logo.ico',
+    favicon: './assets/logo.ico',
     template: 'index_origin.html',    //html模板路径
     filename: 'index.html',
     inject: true,    //允许插件修改哪些内容，包括head与body
     // hash: true,    //为静态资源生成hash值
-    showErrors : false,
+    showErrors: false,
     chunks: mainPageChunks,
     chunksSortMode: function (a, b) {  // 这边如果用none，排序有问题。自己定义排序
         return mainPageChunks.indexOf(a.names[0]) - mainPageChunks.indexOf(b.names[0]);
     },
     minify: {
-        collapseWhitespace : false,
-        removeComments : true
+        collapseWhitespace: false,
+        removeComments: true
     }
 }
 
-var publicPath = "./"; //wuyanwuyan.github.io/";
+var publicPath = "/campaign/";
 module.exports = {
     context: SRC_PATH,
     entry: {
-        "libs": ['jquery','fullPage'],
+        "libs": ['jquery', 'fullPage'],
         "mainPage": './js/main/index'
     },
     output: {
@@ -70,21 +70,28 @@ module.exports = {
         // noParse : ["WdatePicker"],
         loaders: [
             // {test: /\.css$/, loader: 'style!css'},   // 将CSS一起打包进js文件
-            {test: /\.(png|jpg|gif|svg|ico)$/,
-                loader: 'url?limit=2048&name=[name].[hash:8].[ext]'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
-            {test: /\.css$/, loader: ExtractTextPlugin.extract("style", ["css","postcss"])},  // 将CSS文件提取出来
+            {
+                test: /\.(png|jpg|gif|svg|ico)$/,
+                loader: 'url?limit=2048&name=[name].[hash:8].[ext]'
+            },  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
+            {test: /\.css$/, loader: ExtractTextPlugin.extract("style", ["css", "postcss"])},  // 将CSS文件提取出来
             // { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },    //从 npm 模块中将 jquery 挂载到全局
             // {test: require.resolve('bootstrap'), loader: 'expose?bootstrap'}    //将bootstrap暴露到全局
             {
-                test   : /\.woff/,
-                loader : 'url?prefix=font/&limit=10000&mimetype=application/font-woff&name=assets/[name].[hash:8].[ext]'
+                test: /\.woff/,
+                loader: 'url?prefix=font/&limit=10000&mimetype=application/font-woff&name=assets/[name].[hash:8].[ext]'
             }, {
-                test   : /\.ttf/,
-                loader : 'file?prefix=font/&name=assets/[name].[hash:8].[ext]'
+                test: /\.ttf/,
+                loader: 'file?prefix=font/&name=assets/[name].[hash:8].[ext]'
             }, {
-                test   : /\.eot/,
-                loader : 'file?prefix=font/&name=assets/[name].[hash:8].[ext]'
-            }
+                test: /\.eot/,
+                loader: 'file?prefix=font/&name=assets/[name].[hash:8].[ext]'
+            },
+            // {
+            //     test: /\.(html)$/,
+            //     loader: 'html-loader?minimize=false&attrs[]=img:src',
+            //
+            // }
         ]
     },
     resolve: {

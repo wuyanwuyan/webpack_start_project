@@ -28,16 +28,53 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 let router = new _koaRouter2.default();
 
-let key = 'TEST_contact';
+let key = 'contact';
 
 if (false) {
-    key = 'TEST_contact';
+    key = 'TESTcontact';
 }
 
 router.get('/contact', (() => {
     var _ref = (0, _asyncToGenerator3.default)(function* (ctx, next) {
+        if (ctx.query.token !== 'chuangqikey') {
+            ctx.body = null;
+            return;
+        }
         let ret = yield _redis2.default.lrangeAsync(key, 0, -1);
-        ctx.body = ret;
+        let mapStr = ret.map(function (v, i) {
+            let one = JSON.parse(v);
+            return `
+        <tr>
+            <th>${one.contact}</th>
+            <th>${one.appName}</th>
+            <th>${one.phone}</th>
+            <th>${one.qq}</th>
+            <th>${(0, _moment2.default)(one.time).format('YYYY-MM-DD HH:mm:ss')}</th>
+            <th>${one.ip}</th>
+        </tr>
+        `;
+        });
+        ctx.body = `
+        <html>
+            <head>
+            </head>
+            <body>
+            <table border="1">
+            <thead>
+            <tr>
+              <th>联系人</th>
+              <th>app名称</th>
+              <th>电话</th>
+              <th>QQ</th>
+              <th>提交时间</th>
+              <th>ip地址</th>
+            </tr>
+            </thead>
+            ${mapStr.join('')}
+            </table>
+            </body>
+        </html>
+`;
     });
 
     return function (_x, _x2) {
@@ -47,9 +84,15 @@ router.get('/contact', (() => {
 
 router.post('/contact', (() => {
     var _ref2 = (0, _asyncToGenerator3.default)(function* (ctx, next) {
+        if (ctx.request.type.indexOf('json') === -1) {
+            ctx.status = 400;
+            return;
+        }
         let content = ctx.request.body;
         content.time = (0, _moment2.default)();
-        yield _redis2.default.rpushAsync(key, (0, _stringify2.default)(content));
+        // content.ip = ctx.headers['x-real-ip'];
+        content.ip = ctx.headers['x-forwarded-for'].split(',')[0];
+        yield _redis2.default.lpushAsync(key, (0, _stringify2.default)(content));
         ctx.body = null;
     });
 

@@ -76,7 +76,7 @@ module.exports = {
                 test: /\.(ttf|eot)$/,
                 loader: 'file?prefix=font/&name=assets/[name].[ext]'
             },
-            {test: /\.html$/, loader: "html?-minimize"} //避免压缩html,https://github.com/webpack/html-loader/issues/50
+            // {test: /\.html$/, loader: "html?-minimize"} //避免压缩html,https://github.com/webpack/html-loader/issues/50
         ]
     },
     resolve: {

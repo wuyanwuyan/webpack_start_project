@@ -8,12 +8,12 @@
     "url": "git@github.com:wuyanwuyan/webpack_start_project.git"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline --port=8081 --content-base ./debug",
+    "start": "webpack-dev-server --hot --inline --port=8098 --content-base ./debug",
     "start_server": "nodemon ./server/index.js --exec babel-node",
     "dev:build": "webpack --progress --colors --display-error-details",
     "clean-debug": "node scripts/clean.js",
     "clean_server": "rm -rf ./server_dist",
-    "build_client": "rm -rf release/* && webpack -p --config ./webpack.production.config.js && cp ./src/assets/* ./release",
+    "build_client": "rm -rf release/* && webpack -p --config ./webpack.production.config.js",
     "build_server": "NODE_ENV=production babel server -d server_dist",
     "production-view": "webpack-dev-server -p --config ./webpack.production.config.js --inline --content-base ./release"
   },
@@ -40,7 +40,7 @@
     "expose-loader": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
-    "html-loader": "^0.4.4",
+    "html-loader": "^0.5.1",
     "html-webpack-plugin": "^2.22.0",
     "image-webpack-loader": "^2.0.0",
     "postcss-loader": "^1.2.2",
@@ -51,12 +51,16 @@
     "webpack-md5-hash": "0.0.5"
   },
   "dependencies": {
+    "ali-oss": "^4.11.2",
     "bluebird": "^3.5.1",
+    "co": "^4.6.0",
+    "co-fs": "^1.2.0",
     "koa": "^2.3.0",
     "koa-body": "^2.5.0",
     "koa-cors": "^0.0.16",
     "koa-gzip": "^0.1.0",
     "koa-router": "^7.2.1",
+    "koa-static": "^4.0.1",
     "moment": "^2.19.1",
     "mongoose": "^4.12.4",
     "nodemon": "^1.12.1",
