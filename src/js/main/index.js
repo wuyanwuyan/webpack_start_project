@@ -4,6 +4,15 @@ require("css/style.css");
 var utils = require('../util/Utils');
 
 
+var key = 'utm_source';
+var search = window.location.search;
+if(search && search.indexOf(key) === -1){
+    var newSearch = search + '&' + key + '=SEM';
+    var $href = $('#logo_href');
+    var newlocation = $href.attr('href') + newSearch;
+    $href.attr('href',newlocation);
+}
+
 $('form').submit(function (e) {
     e.preventDefault();
 
