@@ -16,7 +16,9 @@
     "transform-runtime",
     "transform-node-env-inline"
   ],
-
+  "ignore": [
+    "server/static/"
+  ],
   "env": {
     "production": {
       "plugins": [

@@ -1,0 +1,53 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="aso,cqaso.com,app推广">
+    <title>app推广结果查询</title>
+    <link rel="stylesheet" href="{{url_prefix}}/css/bootstrap.min.css">
+    <script src="{{url_prefix}}/js/jquery-3.2.1.min.js"></script>
+    <script src="{{url_prefix}}/js/popper.min.js"></script>
+    <script src="{{url_prefix}}/js/bootstrap.min.js"></script>
+</head>
+<body>
+<label>当前有{{data.length}}人提交</label>
+<table class="table table-bordered table-sm">
+    <thead class="thead-dark">
+    <tr>
+        <th>联系人</th>
+        <th>app名称</th>
+        <th>电话</th>
+        <th>微信</th>
+        <th>QQ</th>
+        <th>提交时间</th>
+        <th>ip地址</th>
+        <th>网址查询字符</th>
+        <th>referrer</th>
+        <th>浏览器类型userAgent</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {{#each data}}
+        <tr>
+            <td class="text-nowrap">{{contact}}</td>
+            <td>{{appName}}</td>
+            <td class="text-nowrap">{{phone}}</td>
+            <td class="text-nowrap">{{wechat}}</td>
+            <td class="text-nowrap">{{qq}}</td>
+            <td class="text-nowrap">{{{time}}}</td>
+            <td class="text-nowrap">{{ip}}</td>
+            <td>{{search}}</td>
+            <td>{{referrer}}</td>
+            <td>{{userAgent}}</td>
+        </tr>
+    {{/each}}
+    </tbody>
+</table>
+
+
+</body>
+</html>

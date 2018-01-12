@@ -2,9 +2,11 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta http-equiv="pragma" content="no-cache"/>
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="keywords" content="aso,cqaso.com,app推广">
     <title>app推广</title>
@@ -48,10 +50,10 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="appName" class="col-sm-2 control-label">APP名称<span>*</span></label>
+                    <label for="appName" class="col-sm-2 control-label">APP名称或ID<span>*</span></label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="appName" name="appName"
-                               placeholder="APP名称" maxlength="40" required>
+                               placeholder="APP名称或ID" maxlength="40" required>
                     </div>
                 </div>
                 <div class="form-group">
@@ -62,10 +64,17 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="qq" class="col-sm-2 control-label">QQ<span>*</span></label>
+                    <label for="wechat" class="col-sm-2 control-label">微信号</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="wechat" name="wechat"
+                               placeholder="微信和QQ选填一个" maxlength="24">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="qq" class="col-sm-2 control-label">QQ</label>
                     <div class="col-sm-10">
                         <input type="text" class="form-control" id="qq" name="qq"
-                               placeholder="QQ" maxlength="12" pattern="^[1-9][0-9]{4,10}$" required>
+                               placeholder="微信和QQ选填一个" maxlength="12" pattern="^[1-9][0-9]{4,10}$">
                     </div>
                 </div>
                 <div class="form-group">

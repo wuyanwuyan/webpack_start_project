@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 #清空
 npm run clean_server
-#
+##拷贝
+cp -af ./server ./server_dist
 ##打包
 npm run build_server
 

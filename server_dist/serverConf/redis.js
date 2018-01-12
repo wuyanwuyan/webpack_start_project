@@ -12,15 +12,16 @@ var _bluebird = require('bluebird');
 
 var _bluebird2 = _interopRequireDefault(_bluebird);
 
+var _password = require('./password');
+
+var _password2 = _interopRequireDefault(_password);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 _bluebird2.default.promisifyAll(_redis2.default.RedisClient.prototype);
 _bluebird2.default.promisifyAll(_redis2.default.Multi.prototype);
 
-const client = _redis2.default.createClient({
-    host: '115.159.127.88',
-    password: 'chuangqi@123'
-});
+const client = _redis2.default.createClient(_password2.default);
 
 client.on("error", function (err) {});
 

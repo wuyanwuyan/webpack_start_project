@@ -24,6 +24,8 @@ var _moment = require('moment');
 
 var _moment2 = _interopRequireDefault(_moment);
 
+var _serverRender = require('../utils/serverRender');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 let router = new _koaRouter2.default();
@@ -31,7 +33,7 @@ let router = new _koaRouter2.default();
 let key = 'contact';
 
 if (false) {
-    key = 'TESTcontact';
+    key = 'contact';
 }
 
 router.get('/contact', (() => {
@@ -41,40 +43,12 @@ router.get('/contact', (() => {
             return;
         }
         let ret = yield _redis2.default.lrangeAsync(key, 0, -1);
-        let mapStr = ret.map(function (v, i) {
-            let one = JSON.parse(v);
-            return `
-        <tr>
-            <th>${one.contact}</th>
-            <th>${one.appName}</th>
-            <th>${one.phone}</th>
-            <th>${one.qq}</th>
-            <th>${(0, _moment2.default)(one.time).format('YYYY-MM-DD HH:mm:ss')}</th>
-            <th>${one.ip}</th>
-        </tr>
-        `;
+        let data = ret.map(function (v) {
+            let parseObj = JSON.parse(v);
+            parseObj.time = (0, _moment2.default)(parseObj.time).format('YYYY-MM-DD <br/> HH:mm:ss');
+            return parseObj;
         });
-        ctx.body = `
-        <html>
-            <head>
-            </head>
-            <body>
-            <table border="1">
-            <thead>
-            <tr>
-              <th>联系人</th>
-              <th>app名称</th>
-              <th>电话</th>
-              <th>QQ</th>
-              <th>提交时间</th>
-              <th>ip地址</th>
-            </tr>
-            </thead>
-            ${mapStr.join('')}
-            </table>
-            </body>
-        </html>
-`;
+        ctx.body = yield (0, _serverRender.renderHbs)('contact.hbs', { data });
     });
 
     return function (_x, _x2) {
@@ -92,6 +66,7 @@ router.post('/contact', (() => {
         content.time = (0, _moment2.default)();
         // content.ip = ctx.headers['x-real-ip'];
         content.ip = ctx.headers['x-forwarded-for'].split(',')[0];
+        content.userAgent = ctx.headers['user-agent'];
         yield _redis2.default.lpushAsync(key, (0, _stringify2.default)(content));
         ctx.body = null;
     });
