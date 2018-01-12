@@ -13,9 +13,9 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var CommonsChunkPlugin = require("webpack/lib/optimize/CommonsChunkPlugin");
 
-var mainPageChunks = ["libs", "pageIndex/mainPage"];
+var mainPageChunks = ["mainPage"];
 var mainPageHtmlConfig = {
-    favicon : './assets/logo.ico',
+    favicon : './assets/favicon.ico',
     template: 'index_origin.html',    //html模板路径
     filename: 'index.html',
     inject: true,    //允许插件修改哪些内容，包括head与body
@@ -31,16 +31,15 @@ var mainPageHtmlConfig = {
     }
 }
 
-var publicPath = "//wuyanwuyan.github.io/";
+var publicPath = "./";
 module.exports = {
     context: SRC_PATH,
     entry: {
-        "libs": ['jquery','fullPage'],
-        "pageIndex/mainPage": './js/main/index'
+        "mainPage": './js/main/index'
     },
     output: {
         path: DIST_PATH,
-        filename: 'js/[name].[chunkhash].js',    //'js/[name].[chunkhash].js',
+        filename: '[name].[chunkhash].js',    //'js/[name].[chunkhash].js',
         publicPath: publicPath,     //webpack-dev-server访问的路径 publicPath是为webpack-dev-server所使用
         // ,chunkFilename: "chunk.[name].js"
     },
@@ -51,7 +50,7 @@ module.exports = {
             // jQuery: 'jquery'
             // WdatePicker : 'WdatePicker'
         }),
-        new ExtractTextPlugin("css/[name].[contenthash].css"),
+        new ExtractTextPlugin("[name].[contenthash].css"),
         new webpack.optimize.DedupePlugin(), // 查找相等或近似的模块，去除重复的代码，避免在最终生成的文件中出现重复的模块
         new webpack.optimize.OccurenceOrderPlugin(),  // 按引用频度来排序 ID，以便达到减少文件大小的效果
         new webpack.optimize.UglifyJsPlugin(
@@ -71,7 +70,7 @@ module.exports = {
         loaders: [
             // {test: /\.css$/, loader: 'style!css'},   // 将CSS一起打包进js文件
             {test: /\.(png|jpg|gif|svg|ico)$/,
-                loader: 'url?limit=8192&name=assets/[name].[hash:8].[ext]'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
+                loader: 'url?limit=8192&name=[name].[hash:8].[ext]'},  ////图片文件使用 url-loader 来处理，小于8kb的直接转为base64
             {test: /\.css$/, loader: ExtractTextPlugin.extract("style", ["css","postcss"])},  // 将CSS文件提取出来
             // { test: require.resolve('jquery'), loader: 'expose?jQuery!expose?$' },    //从 npm 模块中将 jquery 挂载到全局
             // {test: require.resolve('bootstrap'), loader: 'expose?bootstrap'}    //将bootstrap暴露到全局
