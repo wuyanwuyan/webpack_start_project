@@ -5,3 +5,5 @@ server_dist/
 
 server/serverConf/password.js
 server/serverConf/password.json
+
+.idea
